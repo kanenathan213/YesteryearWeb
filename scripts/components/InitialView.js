@@ -4,6 +4,8 @@
 
 import React from 'react';
 
+import autobind from 'autobind-decorator';
+
 @autobind
 class InitialView extends React.Component {
     render() {

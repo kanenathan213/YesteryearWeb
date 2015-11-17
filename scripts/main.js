@@ -4,6 +4,7 @@ import { Router, Route } from 'react-router';
 import { createHistory } from 'history';
 
 import App from './components/App';
+import InitialView from './components/InitialView';
 
 /*
   Routes
@@ -11,7 +12,8 @@ import App from './components/App';
 
 var routes = (
   <Router history={createHistory()}>
-    <Route path="/" component={App}/>
+    <Route path="/" component={InitialView}/>
+    <Route path="/tours" component={App}/>
   </Router>
 )
 
