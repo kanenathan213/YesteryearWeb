@@ -1,0 +1,9 @@
+# HeyDay
+
+## To install:
+
+`npm install`
+
+## To run:
+
+`gulp`
