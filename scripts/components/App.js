@@ -4,9 +4,12 @@
 
 import React from 'react';
 
-import Catalyst from 'react-catalyst';
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
+
+// Firebase
+import Rebase  from 're-base';
+var base = Rebase.createClass('https://hey-day-tours.firebaseio.com/');
 
 @autobind
 class App extends React.Component {
@@ -27,13 +30,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="heyday">
-
+          <h1>Let's do this</h1>
       </div>
     )
   }
 
 };
-
-reactMixin.onClass(App, Catalyst.LinkedStateMixin);
 
 export default App;
