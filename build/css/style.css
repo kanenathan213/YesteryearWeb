@@ -270,7 +270,7 @@ h3 {
   font-size: 3rem;
 }
 body {
-  background: #fff;
+  background: #002b4d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Nunito-Regular', sans-serif;
@@ -493,11 +493,11 @@ input[type=submit].twitter:after {
   z-index: 2;
   top: 10%;
   font-size: 4rem;
+  line-height: 4.3rem;
   text-align: center;
   width: 100%;
   padding: 0 5%;
   font-family: 'Nunito-Bold', sans-serif;
-  font-weight: bolder;
 }
 @media only screen and (min-width: 992px) {
   .benefit-statement {
@@ -505,8 +505,6 @@ input[type=submit].twitter:after {
   }
 }
 .benefit {
-  background-repeat: no-repeat;
-  background-size: contain;
   height: 25vh;
   position: relative;
   width: 100%;
@@ -514,42 +512,45 @@ input[type=submit].twitter:after {
 @media only screen and (min-width: 992px) {
   .benefit {
     max-width: 700px;
-    margin: auto auto;
+    margin: 2% auto;
     height: 400px;
   }
 }
 .benefit.benefit-1 {
   background: url("./images/louvre.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .benefit.benefit-1 .benefit-img-overlay {
-  background-image: -webkit-linear-gradient(right, #fff, rgba(255,255,255,0.4));
-  background-image: linear-gradient(to left, #fff, rgba(255,255,255,0.4));
+  background-image: -webkit-linear-gradient(right, #002b4d, rgba(0,43,77,0.6), #002b4d);
+  background-image: linear-gradient(to left, #002b4d, rgba(0,43,77,0.6), #002b4d);
+}
+.benefit.benefit-1 .benefit-statement {
+  color: #fff;
 }
 .benefit.benefit-2 {
   background: url("./images/people-hand-iphone-smartphone.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .benefit.benefit-2 .benefit-img-overlay {
-  background-image: -webkit-linear-gradient(left, #ff930f, rgba(255,147,15,0.4));
-  background-image: linear-gradient(to right, #ff930f, rgba(255,147,15,0.4));
+  background-image: -webkit-linear-gradient(right, #002b4d, rgba(0,43,77,0.6), #002b4d);
+  background-image: linear-gradient(to left, #002b4d, rgba(0,43,77,0.6), #002b4d);
 }
 .benefit.benefit-2 .benefit-statement {
   color: #fff;
 }
 .benefit.benefit-3 {
   background: url("./images/colusseum.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .benefit.benefit-3 .benefit-statement {
   color: #fff;
 }
 .benefit.benefit-3 .benefit-img-overlay {
-  background-image: -webkit-linear-gradient(right, #d64700, rgba(214,71,0,0.4));
-  background-image: linear-gradient(to left, #d64700, rgba(214,71,0,0.4));
+  background-image: -webkit-linear-gradient(right, #002b4d, rgba(0,43,77,0.6), #002b4d);
+  background-image: linear-gradient(to left, #002b4d, rgba(0,43,77,0.6), #002b4d);
 }
 .benefit .benefit-img-overlay {
   position: absolute;

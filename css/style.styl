@@ -2,7 +2,7 @@
 @require './_*.styl'
 
 body
-  background white
+  background dark-blue
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-family 'Nunito-Regular', sans-serif
@@ -166,47 +166,48 @@ button, input[type=submit] // for auth
     z-index 2
     top 10%
     font-size 4rem
+    line-height 4.3rem
     text-align center
     width 100%
     padding 0 5%
     font-family 'Nunito-Bold', sans-serif
-    font-weight bolder
     @media only screen and (min-width : medium)
       font-size 2rem
 
 .benefit
-  background-repeat no-repeat
-  background-size contain
   height 25vh
   position relative
   width 100%
   @media only screen and (min-width : medium)
     max-width 700px
-    margin auto auto
+    margin 2% auto
     height 400px
 
   &.benefit-1
     background url(./images/louvre.jpg)
-    background-size contain
+    background-size cover
     background-repeat no-repeat
 
     .benefit-img-overlay
-      background-image linear-gradient(to left, white, rgba(white, 0.4))
+      background-image linear-gradient(to left, rgba(dark-blue, 1), rgba(dark-blue, 0.6), rgba(dark-blue, 1))
+
+    .benefit-statement
+      color white
 
   &.benefit-2
     background url(./images/people-hand-iphone-smartphone.jpg)
-    background-size contain
+    background-size cover
     background-repeat no-repeat
 
     .benefit-img-overlay
-      background-image linear-gradient(to right, orange, rgba(orange, 0.4))
+      background-image linear-gradient(to left, rgba(dark-blue, 1), rgba(dark-blue, 0.6), rgba(dark-blue, 1))
 
     .benefit-statement
       color white
 
   &.benefit-3
     background url(./images/colusseum.jpg)
-    background-size contain
+    background-size cover
     background-repeat no-repeat
 
     .benefit-statement
@@ -214,7 +215,7 @@ button, input[type=submit] // for auth
 
 
     .benefit-img-overlay
-      background-image linear-gradient(to left, red, rgba(red, 0.4))
+      background-image linear-gradient(to left, rgba(dark-blue, 1), rgba(dark-blue, 0.6), rgba(dark-blue, 1))
 
   .benefit-img-overlay
     position absolute
