@@ -2,7 +2,7 @@
 @require './_*.styl'
 
 body
-  background light-tan
+  background white
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-family 'Nunito-Regular', sans-serif
@@ -123,3 +123,100 @@ button, input[type=submit] // for auth
     background #5EA9DD
     &:after
       background darken(#5EA9DD, 20%)
+
+.intro-header
+  background url(./images/inside_columns.jpeg)
+  background-repeat no-repeat
+  background-size cover
+  min-height 40vh
+  position relative
+  width 100%
+  @media only screen and (min-width : 992px)
+    min-height 55vh
+    background-position 0 20%
+
+.hero-img-overlay
+    position absolute
+    width 100%
+    height 100%
+    background-color hsla(blue 0.7)
+
+.logo-wrap
+    bottom 5%
+    left 5%
+    position absolute
+    z-index 1
+    @media only screen and (min-width : medium)
+      left 20%
+
+.logo-name
+  color white
+  font-family 'sirin', sans-serif
+  font-size 8rem
+  line-height 8.5rem
+
+.logo-tagline
+  color rgba(white 0.7)
+  font-family 'Nunito-Bold', sans-serif
+  font-size 3rem
+  line-height 3.2rem
+
+.benefit-statement
+    position absolute
+    z-index 2
+    top 10%
+    font-size 4rem
+    text-align center
+    width 100%
+    padding 0 5%
+    font-family 'Nunito-Bold', sans-serif
+    font-weight bolder
+    @media only screen and (min-width : medium)
+      font-size 2rem
+
+.benefit
+  background-repeat no-repeat
+  background-size contain
+  height 25vh
+  position relative
+  width 100%
+  @media only screen and (min-width : medium)
+    max-width 700px
+    margin auto auto
+    height 400px
+
+  &.benefit-1
+    background url(./images/louvre.jpg)
+    background-size contain
+    background-repeat no-repeat
+
+    .benefit-img-overlay
+      background-image linear-gradient(to left, white, rgba(white, 0.4))
+
+  &.benefit-2
+    background url(./images/people-hand-iphone-smartphone.jpg)
+    background-size contain
+    background-repeat no-repeat
+
+    .benefit-img-overlay
+      background-image linear-gradient(to right, orange, rgba(orange, 0.4))
+
+    .benefit-statement
+      color white
+
+  &.benefit-3
+    background url(./images/colusseum.jpg)
+    background-size contain
+    background-repeat no-repeat
+
+    .benefit-statement
+      color white
+
+
+    .benefit-img-overlay
+      background-image linear-gradient(to left, red, rgba(red, 0.4))
+
+  .benefit-img-overlay
+    position absolute
+    width 100%
+    height 100%
