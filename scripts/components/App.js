@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="heyday">
-          <h1>Let's do this</h1>
+          <h1>Let's do this now</h1>
       </div>
     )
   }

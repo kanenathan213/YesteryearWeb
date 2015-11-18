@@ -56,16 +56,26 @@
           transform: translateY(-100%);
 }
 @font-face {
-  font-family: "haymakerregular";
-  src: url("./fonts/haymaker-webfont.eot");
-  src: url("./fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/haymaker-webfont.woff") format("woff"), url("./fonts/haymaker-webfont.ttf") format("truetype"), url("./fonts/haymaker-webfont.svg#haymakerregular") format("svg");
+  font-family: 'nunito_bold';
+  src: url("./fonts/Nunito-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nunito_light';
+  src: url("./fonts/Nunito-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nunito_regular';
+  src: url("./fonts/Nunito-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'blanchcaps_inline';
-  src: url("./fonts/blanch_caps_inline-webfont.eot");
-  src: url("./fonts/blanch_caps_inline-webfont.eot?#iefix") format('embedded-opentype'), url("./fonts/blanch_caps_inline-webfont.woff") format('woff'), url("./fonts/blanch_caps_inline-webfont.ttf") format('truetype'), url("./fonts/blanch_caps_inline-webfont.svg#blanchcaps_inline") format('svg');
+  font-family: 'sirin';
+  src: url("./fonts/SirinStencil-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -238,7 +248,7 @@ body {
   font-size: 2rem;
 }
 h1 {
-  font-family: 'blanchcaps_inline', sans-serif;
+  font-family: 'sirin', sans-serif;
   text-align: center;
   font-weight: normal;
   margin: 0;
@@ -255,7 +265,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  font-family: 'haymakerregular', sans-serif;
+  font-family: 'Nunito-Bold', sans-serif;
 }
 h2 {
   text-align: center;

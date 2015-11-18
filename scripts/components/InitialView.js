@@ -11,13 +11,13 @@ class InitialView extends React.Component {
     render() {
       return (
         <div className="initial-view-wrap">
-            <h1>Walk with history</h1>
-            <h2>Heyday</h2>
+            <h1>HEYDAY</h1>
+            <h2>Walk with history</h2>
 
             {/* benefit section component*/}
 
             {/* about HeyDay section component*/}
-            
+
         </div>
       )
     }
