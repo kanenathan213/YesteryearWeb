@@ -239,14 +239,6 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  background: #fffff8;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
-}
 h1 {
   font-family: 'sirin', sans-serif;
   text-align: center;
@@ -256,7 +248,7 @@ h1 {
 }
 @media only screen and (min-width: 992px) {
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 h2,
@@ -271,9 +263,18 @@ h2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
+  font-size: 3rem;
+  opacity: 0.6;
 }
 h3 {
   font-size: 3rem;
+}
+body {
+  background: #fff1cc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito-Regular', sans-serif;
+  font-size: 1rem;
 }
 header.top {
   text-align: center;
@@ -293,7 +294,7 @@ header.top h1 {
 header.top h3 {
   margin: 0;
   font-size: 2rem;
-  color: #f5a623;
+  color: #ff930f;
   position: relative;
   display: inline-block;
 }
@@ -359,13 +360,13 @@ input[type=submit] {
 }
 button[disabled],
 input[type=submit][disabled] {
-  color: #d12028;
+  color: #d64700;
   background: #fff;
-  border-color: #d12028;
+  border-color: #d64700;
 }
 button[disabled]:hover,
 input[type=submit][disabled]:hover {
-  color: #d12028;
+  color: #d64700;
   cursor: not-allowed;
 }
 button[disabled]:after,
@@ -401,11 +402,11 @@ input[type=submit]:focus:after {
 }
 button.warning:after,
 input[type=submit].warning:after {
-  background: #d12028;
+  background: #d64700;
 }
 button.success:after,
 input[type=submit].success:after {
-  background: #2dc22d;
+  background: #008000;
 }
 button.github,
 input[type=submit].github,
