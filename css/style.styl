@@ -50,8 +50,6 @@ header.top
   & > *
     padding 2rem
     position relative
-    background white
-    box-shadow 0px 5px 5px rgba(0,0,0,0.1)
     overflow scroll
 
 button, input[type=submit] // for auth
@@ -59,7 +57,6 @@ button, input[type=submit] // for auth
   border 1px solid black
   font-size 1.5rem
   font-family 'nunito_regular'
-  transition all 0.2s
   position relative
   z-index 2
   &[disabled]
@@ -233,6 +230,42 @@ button, input[type=submit] // for auth
     font-size 1.7rem
     padding-right 10px
 
+.tour-wrap
+  border-radius 10px
+  box-shadow 0px 5px 5px rgba(black 0.1)
+  position relative
+  margin 2% auto
+  max-width 400px
+  max-height 300px
+  overflow hidden
+  transition transform 0.3s ease-out
+
+  &:hover,
+  &:focus
+    cursor pointer
+    transform scale(1.02, 1.02)
+    transform-origin center
+
+.tour-overlay
+  background-color rgba(black 0.5)
+  height 100%
+  position absolute
+  top 0
+  width 100%
+
 .tour-thumbnail {
-    max-width 350px
+  width 100%
+}
+
+.tour-name {
+  color white
+  font-size 2.5rem
+  font-weight bolder
+  z-index 2
+  position absolute
+  bottom 10%
+  width 100%
+  text-align center
+  left 0
+
 }
