@@ -17,15 +17,21 @@ class InitialView extends React.Component {
                     <div className="logo-name">HEYDAY</div>
                     <div className="logo-tagline">Walk with history</div>
                 </div>
+                    <button className="facebook-login">
+                        <i className="ion-social-facebook login-icon"></i>
+                        <span className="login-label">Get Started</span>
+                    </button>
             </header>
             <section className="benefit benefit-1">
                 <div className="benefit-img-overlay"></div>
+                <div className="benefit-img-overlay-2"></div>
                 <div className="benefit-statement">
                     Fascinating audio tours for historical places
                 </div>
             </section>
             <section className="benefit benefit-2">
                 <div className="benefit-img-overlay"></div>
+                <div className="benefit-img-overlay-2"></div>
                 <div className="benefit-statement">
                     Easily listen from your phone
                 </div>
@@ -33,6 +39,7 @@ class InitialView extends React.Component {
 
             <section className="benefit benefit-3">
                 <div className="benefit-img-overlay"></div>
+                <div className="benefit-img-overlay-2"></div>
                 <div className="benefit-statement">
                     Skip the line and save some money
                 </div>
