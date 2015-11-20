@@ -8,7 +8,8 @@ module.exports = {
         description : 'Former historic palace housing a huge art collection, from Roman sculptures to Da Vinci\'s Mona Lisa.',
         image : 'https://i.imgur.com/Se8fKRA.jpg',
         isPurchased : false,
-        totalTime : 245
+        totalTime : 245,
+        tourID : 1
     },
     tour2 : {
         name : 'Picasso Museum',
@@ -19,7 +20,8 @@ module.exports = {
         description : 'Medieval mansions housing extensive collection of influential Spanish cubist\'s works & masterpieces.',
         image : 'https://i.imgur.com/EF4MNNi.jpg',
         isPurchased : true,
-        totalTime : 125
+        totalTime : 125,
+        tourID : 2
     },
     tour3 : {
         name : 'The Prado',
@@ -30,7 +32,8 @@ module.exports = {
         description : 'Art museum with Velazquez, Goya and El Greco masterpieces in vast 12th to 19th-century collection.',
         image : 'https://i.imgur.com/YNyG3TYb.jpg',
         isPurchased : false,
-        totalTime : 57
+        totalTime : 57,
+        tourID : 3
     },
     tour4 : {
         name : 'SFMOMA',
@@ -41,7 +44,8 @@ module.exports = {
         description : 'Former historic palace housing a huge art collection, from Roman sculptures to Da Vinci\'s Mona Lisa.',
         image : 'https://i.imgur.com/Se8fKRA.jpg',
         isPurchased : false,
-        totalTime : 113
+        totalTime : 113,
+        tourID : 4
     },
     tour5 : {
         name : 'New York Met',
@@ -52,6 +56,7 @@ module.exports = {
         description : 'Medieval mansions housing extensive collection of influential Spanish cubist\'s works & masterpieces.',
         image : 'https://i.imgur.com/EF4MNNi.jpg',
         isPurchased : true,
-        totalTime : 26
+        totalTime : 26,
+        tourID : 5
     }
 };

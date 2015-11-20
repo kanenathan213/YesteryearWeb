@@ -45,9 +45,11 @@ class App extends React.Component {
     return (
       <div className="heyday">
           <div className="background-image"></div>
+          <div className="background-overlay"></div>
           <ul className="list-of-tours">
               { Object.keys(this.state.tours).map(this.renderTour) }
           </ul>
+          
       </div>
     )
   }

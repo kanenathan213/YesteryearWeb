@@ -3309,12 +3309,21 @@ header.top h3:after {
   display: block;
   filter: blur(10px);
   -webkit-filter: blur(20px);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  z-index: 1;
+}
+.background-overlay {
+  background: rgba(23,96,125,0.2);
   height: 100%;
   left: 0;
   position: fixed;
   right: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 button,
 input[type=submit] {

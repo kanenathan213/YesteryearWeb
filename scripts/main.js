@@ -5,6 +5,7 @@ import { createHistory } from 'history';
 
 import App from './components/App';
 import InitialView from './components/InitialView';
+import TourDetail from './components/TourDetail';
 
 /*
   Routes
@@ -13,7 +14,8 @@ import InitialView from './components/InitialView';
 var routes = (
   <Router history={createHistory()}>
     <Route path="/" component={InitialView}/>
-    <Route path="/tours" component={App}/>
+    <Route path="tours" component={App}/>
+      <Route path="tours/:tourID" component={TourDetail}/>
   </Router>
 )
 
