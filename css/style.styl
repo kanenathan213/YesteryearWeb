@@ -42,15 +42,28 @@ header.top
       bottom 7px
 
 .heyday
-  max-height 90vh
-  width 100%
-  margin 0 auto
-  margin-top 5vh
+  background-color white
+  height 100vh
+  width 100vw
+  margin 0
 
   & > *
     padding 2rem
     position relative
     overflow scroll
+
+.background-image
+  background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
+  background-size: cover;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(20px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100%
+  z-index 1
 
 button, input[type=submit] // for auth
   background none
@@ -238,7 +251,9 @@ button, input[type=submit] // for auth
   height 20vh
   overflow hidden
   margin-bottom 5%
-  transition transform 0.3s ease-out
+  transition transform 0.2s ease-out
+  opacity .9
+
   @media only screen and (min-width : medium)
     height 200px
     margin-bottom 10%
@@ -249,6 +264,7 @@ button, input[type=submit] // for auth
     cursor pointer
     transform scale(1.02, 1.02)
     transform-origin center
+    opacity 1
 
 .tour-overlay
   background-color rgba(black 0.5)
@@ -259,7 +275,8 @@ button, input[type=submit] // for auth
 
 .tour-thumbnail
   width 100%
-
+  &:hover
+    display none
 
 .tour-name
   color white
@@ -281,6 +298,7 @@ button, input[type=submit] // for auth
   margin auto
   justify-content space-around
   width: 100%
+  z-index 2
   @media only screen and (min-width : medium)
     width 1000px
 

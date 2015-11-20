@@ -5,7 +5,7 @@ class Tour extends React.Component {
         return (
             <li>
                 <div className="tour-wrap">
-                    <img src={ this.props.details.image } alt="tour-image" className="tour-thumbnail" />
+                    <figure><img src={ this.props.details.image } alt="tour-image" className="tour-thumbnail" /></figure>
                     <div className="tour-overlay"></div>
                     <span className="tour-name">{ this.props.details.name }</span>
                     <span className="tour-price">${ this.props.details.price }</span>

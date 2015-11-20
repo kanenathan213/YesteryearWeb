@@ -3293,15 +3293,28 @@ header.top h3:after {
   bottom: 7px;
 }
 .heyday {
-  max-height: 90vh;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 5vh;
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 .heyday > * {
   padding: 2rem;
   position: relative;
   overflow: scroll;
+}
+.background-image {
+  background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG");
+  background-size: cover;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(20px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 1;
 }
 button,
 input[type=submit] {
@@ -3551,10 +3564,11 @@ input[type=submit].facebook-login:active {
   height: 20vh;
   overflow: hidden;
   margin-bottom: 5%;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  opacity: 0.9;
 }
 @media only screen and (min-width: 992px) {
   .tour-wrap {
@@ -3572,6 +3586,7 @@ input[type=submit].facebook-login:active {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
+  opacity: 1;
 }
 .tour-overlay {
   background-color: rgba(0,0,0,0.5);
@@ -3582,6 +3597,9 @@ input[type=submit].facebook-login:active {
 }
 .tour-thumbnail {
   width: 100%;
+}
+.tour-thumbnail:hover {
+  display: none;
 }
 .tour-name {
   color: #fff;
@@ -3612,6 +3630,7 @@ input[type=submit].facebook-login:active {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   width: 100%;
+  z-index: 2;
 }
 @media only screen and (min-width: 992px) {
   .list-of-tours {

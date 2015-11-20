@@ -44,6 +44,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="heyday">
+          <div className="background-image"></div>
           <ul className="list-of-tours">
               { Object.keys(this.state.tours).map(this.renderTour) }
           </ul>
