@@ -1,25 +1,18 @@
 import React from 'react';
-import { History } from 'react-router';
-import h from '../helpers';
+import { Link, History } from 'react-router';
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
-import { Link } from 'react-router';
+import TourDetail from './TourDetail';
+import h from '../helpers';
 
 @autobind
 class Tour extends React.Component {
 
-    goToTour(event) {
-      event.preventDefault();
-      // get the data from the input
-      var tourID = h.slugify(this.props.details.name);
-      this.history.pushState(null, '/tours/' + tourID);
-    }
-
     render() {
         return (
             <li>
-                <div className="tour-wrap" ref="tourID" onClick={this.goToTour}>
+                <div className="tour-wrap" ref="tourID">
                     <figure><img src={ this.props.details.image } alt="tour-image" className="tour-thumbnail" /></figure>
                     <div className="tour-overlay"></div>
                     <span className="tour-name">{ this.props.details.name }</span>
@@ -34,6 +27,3 @@ class Tour extends React.Component {
 reactMixin.onClass(Tour, History);
 
 export default Tour;
-
-//<Link to={ "tour/" + this.props.details.tourID }>
-// </Link>

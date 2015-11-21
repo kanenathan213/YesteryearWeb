@@ -3,12 +3,10 @@
 */
 
 import React from 'react';
-
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
-//import TourList from './TourList';
-import Tour from './Tour';
+import ToursList from './ToursList';
 
 // Firebase
 import Rebase  from 're-base';
@@ -24,7 +22,18 @@ class App extends React.Component {
       userData : {},
       tours : {}
     };
+  }
 
+  componentWillReceiveProps(nextProps) {
+    // if we changed routes...
+    if ((
+      nextProps.location.key !== this.props.location.key &&
+      nextProps.location.state &&
+      nextProps.location.state.modal
+    )) {
+      // save the old children (just like animation)
+      this.previousChildren = this.props.children
+    }
   }
 
   componentDidMount() {
@@ -33,27 +42,24 @@ class App extends React.Component {
       });
   }
 
-  componentWillUpdate(nextProps, nextState) {
-
-  }
-
-  renderTour(key) {
-      return <Tour key={key} index={key} details={this.state.tours[key]} />
+  content() {
+      return React.Children.map(this.props.children, child =>
+          React.cloneElement(child, {
+            tours: this.state.tours
+          }
+        )
+      );
   }
 
   render() {
     return (
       <div className="heyday">
-          <div className="background-image"></div>
-          <div className="background-overlay"></div>
-          <ul className="list-of-tours">
-              { Object.keys(this.state.tours).map(this.renderTour) }
-          </ul>
-          
+          {this.content()}
       </div>
     )
   }
-
 };
+
+reactMixin.onClass(App, History);
 
 export default App;
