@@ -6,9 +6,10 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import autobind from 'autobind-decorator';
+import ViewTourListButton from './ViewTourListButton'
 
 @autobind
-class InitialView extends React.Component {
+class Index extends React.Component {
 
     render() {
       return (
@@ -20,10 +21,7 @@ class InitialView extends React.Component {
                     <div className="logo-tagline">Walk with history</div>
                 </div>
                     <Link to="/tours">
-                        <button className="facebook-login">
-                            <i className="ion-social-facebook login-icon"></i>
-                            <span className="login-label">Get Started</span>
-                        </button>
+                        <ViewTourListButton />
                     </Link>
             </header>
             <section className="benefit benefit-1">
@@ -52,4 +50,4 @@ class InitialView extends React.Component {
     }
 }
 
-export default InitialView;
+export default Index;
