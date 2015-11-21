@@ -7,6 +7,7 @@ import App from './components/App';
 import Index from './components/Index';
 import TourDetail from './components/TourDetail';
 import ToursList from './components/ToursList';
+import TourActive from './components/TourActive';
 
 /*
   Routes
@@ -19,6 +20,7 @@ const routes = (
       <Route path="tours" component={ToursList}>
           <Route path=":tourID" component={TourDetail} />
       </Route>
+      <Route path="play-tour/:playingTourID" component={TourActive} />
     </Route>
   </Router>
 )

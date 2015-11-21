@@ -16,7 +16,7 @@ class TourDetail extends React.Component {
               <div className="tour-detail-wrap">
                   <div className="tour-detail">
                       <section className="tour-detail-top-wrap">
-                          <figure><img src={ this.props.details.image } alt="tour-image" className="tour-detail-thumbnail" /></figure>
+                          <figure><img src={ details.image } alt="tour-image" className="tour-detail-thumbnail" /></figure>
                           <div className="tour-detail-overlay"></div>
                           <div className="tour-detail-title-wrap">
                               <div className="tour-detail-name">{ details.name }</div>
@@ -25,10 +25,12 @@ class TourDetail extends React.Component {
 
                       </section>
                       <section className="cta-section">
-                        <button className="tour-detail-cta">
-                            ${ details.price }
-                            <span className="cta-label">Buy</span>
-                        </button>
+                        <Link to={`/play-tour/${this.props.details.tourID}`}>
+                            <button className="tour-detail-cta">
+                              ${ details.price }
+                              <span className="cta-label">Buy</span>
+                            </button>
+                        </Link>
                       </section>
                       <section className="tour-detail-desc">
                           <div>{ details.description }</div>

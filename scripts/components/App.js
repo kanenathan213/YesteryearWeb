@@ -7,6 +7,7 @@ import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
 import ToursList from './ToursList';
+import TourActive from './TourActive';
 
 // Firebase
 import Rebase  from 're-base';
@@ -54,6 +55,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="heyday">
+          <div className="background-image"></div>
+          <div className="background-overlay"></div>
           {this.content()}
       </div>
     )

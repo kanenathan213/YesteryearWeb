@@ -20,8 +20,6 @@ class ToursList extends React.Component {
   render() {
       return (
           <div className="list-of-tours-wrap">
-              <div className="background-image"></div>
-              <div className="background-overlay"></div>
               <ul className="list-of-tours">
                   { Object.keys(this.props.tours).map(this.renderTour) }
               </ul>

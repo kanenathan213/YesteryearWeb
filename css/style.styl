@@ -55,8 +55,7 @@ header.top
   background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
   background-size: cover;
   display: block;
-  filter: blur(10px);
-  -webkit-filter: blur(20px);
+  filter: blur(20px);
   height: 100vh
   left: 0;
   position: fixed;
@@ -386,11 +385,11 @@ button, input[type=submit] // for auth
   display none
 
 .tour-detail
-  background black
+  background light-tan
   border-radius 10px
-  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1),2px 2px 6px rgba(0,0,0,0.4)
+  box-shadow 0px 0px 150px 130px rgba(0, 0, 0, 0.5)
   max-width 700px
-  margin 3% auto
+  margin 10% auto auto auto
   overflow hidden
   padding 0 0 3% 0
   position relative
@@ -452,7 +451,7 @@ button, input[type=submit] // for auth
   border-radius 10px
   border 0
   padding .8rem 1rem
-  transition transform .2s ease
+  transition transform 0.2s ease-out
 
   &:hover,
   &:focus
@@ -473,5 +472,6 @@ button, input[type=submit] // for auth
   text-shadow 0 -1px 0 rgba(0,0,0,0.2)
 
 .tour-detail-desc
-  padding 1rem 2rem
+  color text-lt-bg
   overflow scroll
+  padding 1rem 2rem

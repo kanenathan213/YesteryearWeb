@@ -3306,8 +3306,8 @@ header.top h3:after {
   background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG");
   background-size: cover;
   display: block;
-  filter: blur(10px);
   -webkit-filter: blur(20px);
+          filter: blur(20px);
   height: 100vh;
   left: 0;
   position: fixed;
@@ -3753,11 +3753,11 @@ input[type=submit].facebook-login:active {
   display: none;
 }
 .tour-detail {
-  background: #000;
+  background: #fff1cc;
   border-radius: 10px;
-  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 2px 2px 6px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 150px 130px rgba(0,0,0,0.5);
   max-width: 700px;
-  margin: 3% auto;
+  margin: 10% auto auto auto;
   overflow: hidden;
   padding: 0 0 3% 0;
   position: relative;
@@ -3830,10 +3830,10 @@ input[type=submit].facebook-login:active {
   border-radius: 10px;
   border: 0;
   padding: 0.8rem 1rem;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 .tour-detail-cta:hover,
 .tour-detail-cta:focus {
@@ -3863,6 +3863,7 @@ input[type=submit].facebook-login:active {
   text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
 }
 .tour-detail-desc {
-  padding: 1rem 2rem;
+  color: #404040;
   overflow: scroll;
+  padding: 1rem 2rem;
 }
