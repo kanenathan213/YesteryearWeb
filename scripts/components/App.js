@@ -44,12 +44,23 @@ class App extends React.Component {
   }
 
   content() {
-      return React.Children.map(this.props.children, child =>
-          React.cloneElement(child, {
-            tours: this.state.tours
-          }
-        )
-      );
+      if (this.props.params.tourID) {
+          return (
+              <div className="detail">
+                  {this.props.children && React.cloneElement(this.props.children, {
+                      details : this.state.tours[this.props.params.tourID]
+                  })}
+              </div>
+          )
+      }
+      else {
+          return React.Children.map(this.props.children, child =>
+              React.cloneElement(child, {
+                tours: this.state.tours
+              }
+            )
+          );
+      }
   }
 
   render() {

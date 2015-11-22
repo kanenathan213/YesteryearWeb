@@ -23,11 +23,6 @@ class ToursList extends React.Component {
               <ul className="list-of-tours">
                   { Object.keys(this.props.tours).map(this.renderTour) }
               </ul>
-              <div className="detail">
-                  {this.props.children && React.cloneElement(this.props.children, {
-                      details : this.props.tours[this.props.params.tourID]
-                  })}
-              </div>
           </div>
       )
   }

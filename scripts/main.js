@@ -17,10 +17,8 @@ const routes = (
   <Router history={createHistory()}>
     <Route path="/" component={App}>
       <IndexRoute component={Index} />
-      <Route path="tours" component={ToursList}>
-          <Route path=":tourID" component={TourDetail} />
-      </Route>
-      <Route path="play-tour/:playingTourID" component={TourActive} />
+      <Route path="tours" component={ToursList} />
+      <Route path="tours/:tourID" component={TourDetail} />
     </Route>
   </Router>
 )
