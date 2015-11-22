@@ -77,6 +77,7 @@ header.top
 button, input[type=submit] // for auth
   background none
   border 1px solid black
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.1), 0px 2px 4px rgba(0,0,0,0.4)
   font-size 1.5rem
   font-family 'nunito_regular'
   position relative
@@ -398,7 +399,6 @@ button, input[type=submit] // for auth
   max-width 700px
   margin 2% auto auto auto
   overflow hidden
-  padding 0 0 3% 0
   position relative
   max-height 80vh
 
@@ -420,7 +420,7 @@ button, input[type=submit] // for auth
 
 .tour-detail-top-wrap
   color white
-  height 300px
+  height 200px
   overflow hidden
   position relative
   text-shadow 0 1px 0 rgba(0,0,0,0.4)
@@ -453,6 +453,53 @@ button, input[type=submit] // for auth
   text-align center
   transform translateY(-40%)
 
+.tour-detail-desc
+  color text-lt-bg
+  padding 1rem 2rem
+
+.list-of-stops-wrap
+  border-bottom-left-radius 10px
+  overflow auto
+  max-height 45vh
+
+.list-of-stops
+  color text-lt-bg
+  list-style-type none
+  margin 0
+  padding 0
+
+.tour-stop-wrap
+  border-bottom 1px solid rgba(text-lt-bg, 0.2)
+  height 70px
+  position relative
+  transition background-color 0.2s ease
+  &:hover
+    background-color aliceblue
+    cursor pointer
+  &:last-child
+    border none
+
+.stop-figure
+  display inline-block
+  height 70px
+
+.stop-thumbnail
+  display inline-block
+  width 70px
+  height 70px
+
+.stop-text-wrapper
+  display inline-block
+  height 100%
+  padding 25px 2%
+  vertical-align top
+
+.detail-cta-wrap
+  position absolute
+  bottom 5%
+  width 100%
+  text-align center
+
 .tour-detail-cta
   color white
   z-index 3
@@ -477,12 +524,16 @@ button, input[type=submit] // for auth
 
 .cta-label
   display inline-block
-  border-left 1px solid rgba(white, 0.3)
-  margin-left 10px
-  padding-left 10px
   text-shadow 0 -1px 0 rgba(0,0,0,0.2)
 
-.tour-detail-desc
-  color text-lt-bg
-  overflow scroll
-  padding 1rem 2rem
+.progress-bar-wrapper
+  position absolute
+  top 10px
+  right 10px
+
+.tour-control
+  height 100%
+  font-size 1.5rem
+  left 20px
+  position absolute
+  top 13px

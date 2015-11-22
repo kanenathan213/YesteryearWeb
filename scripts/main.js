@@ -7,7 +7,6 @@ import App from './components/App';
 import Index from './components/Index';
 import TourDetail from './components/TourDetail';
 import ToursList from './components/ToursList';
-import TourActive from './components/TourActive';
 
 /*
   Routes

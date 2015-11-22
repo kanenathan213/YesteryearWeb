@@ -7,7 +7,6 @@ import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
 import ToursList from './ToursList';
-import TourActive from './TourActive';
 
 // Firebase
 import Rebase  from 're-base';

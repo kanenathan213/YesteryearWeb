@@ -26,7 +26,7 @@ class TourDetail extends React.Component {
                               <div className="tour-detail-stops">{ details.totalTime } minutes</div>
                           </div>
                       </section>
-                      <StopsList />
+                      <StopsList details={details}/>
                   </div>
               </div>
 

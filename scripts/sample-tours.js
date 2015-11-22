@@ -9,7 +9,33 @@ module.exports = {
         image : 'https://i.imgur.com/Se8fKRA.jpg',
         isPurchased : false,
         totalTime : 245,
-        tourID : 1
+        tourID : 1,
+        stops : [
+            {
+                stopID: 1,
+                name: "Lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 137,
+                description: "Super great painting by a greater man"
+            },
+            {
+                stopID: 2,
+                name: "Another lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 122,
+                description: "Wow, look at those strokes!"
+            },
+            {
+                stopID: 3,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            }
+        ]
     },
     tour2 : {
         name : 'Picasso Museum',
@@ -21,7 +47,33 @@ module.exports = {
         image : 'https://i.imgur.com/EF4MNNi.jpg',
         isPurchased : true,
         totalTime : 125,
-        tourID : 2
+        tourID : 2,
+        stops : [
+            {
+                stopID: 1,
+                name: "Lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 137,
+                description: "Super great painting by a greater man"
+            },
+            {
+                stopID: 2,
+                name: "Another lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 122,
+                description: "Wow, look at those strokes!"
+            },
+            {
+                stopID: 3,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            }
+        ]
     },
     tour3 : {
         name : 'The Prado',
@@ -33,7 +85,33 @@ module.exports = {
         image : 'https://i.imgur.com/YNyG3TYb.jpg',
         isPurchased : false,
         totalTime : 57,
-        tourID : 3
+        tourID : 3,
+        stops : [
+            {
+                stopID: 1,
+                name: "Lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 137,
+                description: "Super great painting by a greater man"
+            },
+            {
+                stopID: 2,
+                name: "Another lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 122,
+                description: "Wow, look at those strokes!"
+            },
+            {
+                stopID: 3,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            }
+        ]
     },
     tour4 : {
         name : 'SFMOMA',
@@ -45,7 +123,65 @@ module.exports = {
         image : 'https://i.imgur.com/Se8fKRA.jpg',
         isPurchased : false,
         totalTime : 113,
-        tourID : 4
+        tourID : 4,
+        stops : [
+            {
+                stopID: 1,
+                name: "Lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 137,
+                description: "Super great painting by a greater man"
+            },
+            {
+                stopID: 2,
+                name: "Another lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 122,
+                description: "Wow, look at those strokes!"
+            },
+            {
+                stopID: 3,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            },
+            {
+                stopID: 4,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            },
+            {
+                stopID: 5,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            },
+            {
+                stopID: 6,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            },
+            {
+                stopID: 7,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            }
+        ]
     },
     tour5 : {
         name : 'New York Met',
@@ -57,6 +193,32 @@ module.exports = {
         image : 'https://i.imgur.com/EF4MNNi.jpg',
         isPurchased : true,
         totalTime : 26,
-        tourID : 5
+        tourID : 5,
+        stops : [
+            {
+                stopID: 1,
+                name: "Lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 137,
+                description: "Super great painting by a greater man"
+            },
+            {
+                stopID: 2,
+                name: "Another lovely Painting",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 122,
+                description: "Wow, look at those strokes!"
+            },
+            {
+                stopID: 3,
+                name: "A Roman sculpture",
+                audioURL: "s3.aws.com/asdfjldsjf",
+                image: "https://i.imgur.com/Se8fKRA.jpg",
+                length: 243,
+                description: "Super great sculpture by a greater man"
+            }
+        ]
     }
 };
