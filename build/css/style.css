@@ -3885,7 +3885,8 @@ input[type=submit].facebook-login:active {
 .detail-cta-wrap {
   position: absolute;
   bottom: 5%;
-  width: 100%;
+  left: 45%;
+  right: 45%;
   text-align: center;
 }
 .tour-detail-cta {
@@ -3935,7 +3936,7 @@ input[type=submit].facebook-login:active {
 .tour-control {
   height: 100%;
   font-size: 1.5rem;
-  left: 20px;
+  left: 21px;
   position: absolute;
   top: 13px;
 }

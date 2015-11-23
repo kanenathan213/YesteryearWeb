@@ -8,10 +8,32 @@ import TourStop from './TourStop';
 @autobind
 class StopsList extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+          audios: []
+        };
+    }
+
+  _add(elem) {
+      this.state.audios.push(elem);
+  }
+
+  _stopAll() {
+      this.state.audios.map((item) => {
+	      item.pause();
+	  });
+  }
+
   renderTourStop(key) {
-      console.log(key);
       return (
-          <TourStop key={key.stopID} index={key.stopID} stopDetails={key} />
+          <TourStop
+              key={key.stopID}
+              index={key.stopID}
+              stopDetails={key}
+              stopAll={this._stopAll}
+              ptag={this._add}
+          />
       )
   }
 

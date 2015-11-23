@@ -14,7 +14,7 @@ module.exports = {
             {
                 stopID: 1,
                 name: "Lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 137,
                 description: "Super great painting by a greater man"
@@ -22,7 +22,7 @@ module.exports = {
             {
                 stopID: 2,
                 name: "Another lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 122,
                 description: "Wow, look at those strokes!"
@@ -30,7 +30,7 @@ module.exports = {
             {
                 stopID: 3,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -52,7 +52,7 @@ module.exports = {
             {
                 stopID: 1,
                 name: "Lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 137,
                 description: "Super great painting by a greater man"
@@ -60,7 +60,7 @@ module.exports = {
             {
                 stopID: 2,
                 name: "Another lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 122,
                 description: "Wow, look at those strokes!"
@@ -68,7 +68,7 @@ module.exports = {
             {
                 stopID: 3,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -90,7 +90,7 @@ module.exports = {
             {
                 stopID: 1,
                 name: "Lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 137,
                 description: "Super great painting by a greater man"
@@ -98,7 +98,7 @@ module.exports = {
             {
                 stopID: 2,
                 name: "Another lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 122,
                 description: "Wow, look at those strokes!"
@@ -106,7 +106,7 @@ module.exports = {
             {
                 stopID: 3,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -128,7 +128,7 @@ module.exports = {
             {
                 stopID: 1,
                 name: "Lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 137,
                 description: "Super great painting by a greater man"
@@ -136,7 +136,7 @@ module.exports = {
             {
                 stopID: 2,
                 name: "Another lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 122,
                 description: "Wow, look at those strokes!"
@@ -144,7 +144,7 @@ module.exports = {
             {
                 stopID: 3,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -152,7 +152,7 @@ module.exports = {
             {
                 stopID: 4,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -160,7 +160,7 @@ module.exports = {
             {
                 stopID: 5,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -168,7 +168,7 @@ module.exports = {
             {
                 stopID: 6,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -176,7 +176,7 @@ module.exports = {
             {
                 stopID: 7,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
@@ -198,7 +198,7 @@ module.exports = {
             {
                 stopID: 1,
                 name: "Lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 137,
                 description: "Super great painting by a greater man"
@@ -206,7 +206,7 @@ module.exports = {
             {
                 stopID: 2,
                 name: "Another lovely Painting",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 122,
                 description: "Wow, look at those strokes!"
@@ -214,7 +214,7 @@ module.exports = {
             {
                 stopID: 3,
                 name: "A Roman sculpture",
-                audioURL: "s3.aws.com/asdfjldsjf",
+                audioURL: "../audio/clip1.wav",
                 image: "https://i.imgur.com/Se8fKRA.jpg",
                 length: 243,
                 description: "Super great sculpture by a greater man"
