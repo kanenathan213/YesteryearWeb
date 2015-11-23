@@ -41,12 +41,22 @@ class StopsList extends React.Component {
       return (
           <div className="list-of-stops-wrap">
               <ul className="list-of-stops">
-                  { (this.props.details.stops).map(this.renderTourStop) }
+                  <div className="free-stops">
+                      { (this.props.details.stops.slice(0,1)).map(this.renderTourStop) }
+                  </div>
+                  <div className="paid-stops">
+                      <div className="pay-wall-overlay">
+                      </div>
+                      { (this.props.details.stops.slice(1)).map(this.renderTourStop) }
+                  </div>
               </ul>
               <div className="detail-cta-wrap">
+                  <div className="detail-price">
+                      ${ this.props.details.price }
+                  </div>
                   <Link to={`/tours/`}>
                       <button className="tour-detail-cta">
-                          <span className="cta-label">Buy</span>
+                          <span className="cta-label">Buy tour</span>
                       </button>
                   </Link>
               </div>

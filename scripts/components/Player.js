@@ -89,11 +89,9 @@ class Track extends Component {
           this.setState({
             progress: newProgress
           });
-          console.log(this.state.progress);
       }
 
       render() {
-        let progress = 0;
         return (
             <div className="player">
                 <div className="progress-bar-wrapper">

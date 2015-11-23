@@ -3867,6 +3867,9 @@ input[type=submit].facebook-login:active {
 .tour-stop-wrap:last-child {
   border: none;
 }
+.tour-stop-wrap:first-child {
+  border-bottom: 1px solid rgba(64,64,64,0.2);
+}
 .stop-figure {
   display: inline-block;
   height: 70px;
@@ -3883,26 +3886,63 @@ input[type=submit].facebook-login:active {
   vertical-align: top;
 }
 .detail-cta-wrap {
+  background-color: rgba(255,147,15,0.2);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 1px solid rgba(255,147,15,0.5);
+  border-bottom: 0;
+  bottom: 0;
+  width: 40%;
+  padding: 1rem 1rem;
   position: absolute;
-  bottom: 5%;
-  left: 45%;
-  right: 45%;
   text-align: center;
+  left: 30%;
+}
+.cta-label {
+  display: inline-block;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+.progress-bar-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.tour-control {
+  height: 100%;
+  font-size: 1.5rem;
+  right: 27px;
+  position: absolute;
+  top: 22px;
+}
+.paid-stops {
+  height: 100%;
+  opacity: 0.2;
+  position: relative;
+  width: 100%;
+}
+.pay-wall-overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 .tour-detail-cta {
-  color: #fff;
-  z-index: 3;
-  font-size: 1.5rem;
-  font-weight: lighter;
   background-image: -webkit-linear-gradient(top, #ff894e, #d64700);
   background-image: linear-gradient(to bottom, #ff894e, #d64700);
-  border-radius: 10px;
   border: 0;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: lighter;
   padding: 0.8rem 1rem;
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  z-index: 3;
 }
 .tour-detail-cta:hover,
 .tour-detail-cta:focus {
@@ -3924,19 +3964,11 @@ input[type=submit].facebook-login:active {
       -ms-transform: scale(0.95, 0.95);
           transform: scale(0.95, 0.95);
 }
-.cta-label {
+.detail-price {
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  color: #ff930f;
   display: inline-block;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-}
-.progress-bar-wrapper {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.tour-control {
-  height: 100%;
-  font-size: 1.5rem;
-  right: 27px;
-  position: absolute;
-  top: 22px;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-right: 13%;
 }

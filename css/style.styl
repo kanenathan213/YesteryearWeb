@@ -478,6 +478,8 @@ button, input[type=submit] // for auth
     cursor pointer
   &:last-child
     border none
+  &:first-child
+    border-bottom 1px solid rgba(text-lt-bg, 0.2)
 
 .stop-figure
   display inline-block
@@ -495,37 +497,21 @@ button, input[type=submit] // for auth
   vertical-align top
 
 .detail-cta-wrap
+  background-color rgba(orange, .2)
+  border-top-left-radius 50px
+  border-top-right-radius 50px
+  border 1px solid rgba(orange, .5)
+  border-bottom 0
+  bottom 0
+  width 40%
+  padding 1rem 1rem
   position absolute
-  bottom 5%
-  left 45%
-  right 45%
   text-align center
-
-.tour-detail-cta
-  color white
-  z-index 3
-  font-size 1.5rem
-  font-weight lighter
-  background-image linear-gradient(to bottom, lighten(red, 40%), red)
-  border-radius 10px
-  border 0
-  padding .8rem 1rem
-  transition transform 0.2s ease-out
-
-  &:hover,
-  &:focus
-    background-image linear-gradient(to bottom, lighten(red, 50%), lighten(red, 10%))
-    border-radius 10px
-    transform scale(1.05, 1.05)
-    transform-origin center
-  &:active
-    background-image linear-gradient(to bottom, lighten(red, 20%), red)
-    outline-width 0
-    transform scale(.95, .95)
+  left 30%
 
 .cta-label
   display inline-block
-  text-shadow 0 -1px 0 rgba(0,0,0,0.2)
+  text-shadow 0 -1px 0 rgba(0, 0, 0, .2)
 
 .progress-bar-wrapper
   position absolute
@@ -538,3 +524,48 @@ button, input[type=submit] // for auth
   right 27px
   position absolute
   top 22px
+
+.paid-stops
+  height 100%
+  opacity 0.2
+  position relative
+  width 100%
+
+.pay-wall-overlay
+  height 100%
+  left 0
+  position absolute
+  top 0
+  width 100%
+  z-index 2
+
+.tour-detail-cta
+  background-image linear-gradient(to bottom, lighten(red, 40%), red)
+  border 0
+  border-radius 10px
+  color white
+  display inline-block
+  font-size 1.5rem
+  font-weight lighter
+  padding .8rem 1rem
+  transition transform 0.2s ease-out
+  z-index 3
+
+  &:hover,
+  &:focus
+    background-image linear-gradient(to bottom, lighten(red, 50%), lighten(red, 10%))
+    border-radius 10px
+    transform scale(1.05, 1.05)
+    transform-origin center
+  &:active
+    background-image linear-gradient(to bottom, lighten(red, 20%), red)
+    outline-width 0
+    transform scale(.95, .95)
+
+.detail-price
+  text-shadow 0px 1px 1px rgba(black 0.2)
+  color orange
+  display inline-block
+  font-size 2.3rem
+  font-weight bolder
+  margin-right 13%
