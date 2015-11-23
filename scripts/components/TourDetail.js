@@ -33,7 +33,7 @@ class TourDetail extends React.Component {
           )
       }
       else {
-        return <p className="dummy"></p>
+        return null;
       }
   }
 }

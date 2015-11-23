@@ -22,7 +22,6 @@ class TourStop extends React.Component {
     render() {
         return (
             <li className="tour-stop-wrap" ref="tourID">
-
                 <figure className="stop-figure">
                     <img src={ this.props.stopDetails.image } alt="tour-image" className="stop-thumbnail" />
                 </figure>
@@ -34,7 +33,6 @@ class TourStop extends React.Component {
                     ptag={this.props.ptag}
                     stopDetails={this.props.stopDetails}
                 />
-
             </li>
         )
     }

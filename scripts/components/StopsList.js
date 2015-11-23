@@ -54,7 +54,7 @@ class StopsList extends React.Component {
                   <div className="detail-price">
                       ${ this.props.details.price }
                   </div>
-                  <Link to={`/tours/`}>
+                  <Link to={`/account/`}>
                       <button className="tour-detail-cta">
                           <span className="cta-label">Buy tour</span>
                       </button>

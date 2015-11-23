@@ -7,6 +7,7 @@ import App from './components/App';
 import Index from './components/Index';
 import TourDetail from './components/TourDetail';
 import ToursList from './components/ToursList';
+import Account from './components/Account';
 
 /*
   Routes
@@ -18,6 +19,7 @@ const routes = (
       <IndexRoute component={Index} />
       <Route path="tours" component={ToursList} />
       <Route path="tours/:tourID" component={TourDetail} />
+      <Route path="account" component={Account} />
     </Route>
   </Router>
 )

@@ -1,0 +1,52 @@
+import React from 'react';
+import autobind from 'autobind-decorator';
+import { Link } from 'react-router';
+
+import Firebase from 'firebase';
+
+@autobind
+class Account extends React.Component {
+
+  renderLogin() {
+      return (
+          <button className="fb-connect" onClick={this.props.authenticate.bind(this, 'facebook')}>Connect</button>
+      )
+  }
+
+  renderLogout() {
+      return (
+          <div className="signed-in-wrap">
+              <span>{this.props.userData.firstName} {this.props.userData.lastName}</span>
+              <span>{this.props.userData.email}</span>
+              <img src={this.props.userData.profpic} />
+              <button className="logout" onClick={this.props.logout}>Logout</button>
+              <button className="delete-account" onClick={this.props.deleteAccount}>Delete account</button>
+          </div>
+      )
+  }
+
+  renderPaymentsService() {
+      return (
+          <button className="stripe-connect">Pay with Stripe</button>
+      )
+  }
+
+  componentDidMount() {
+      
+  }
+
+  render() {
+      return (
+          <div className="account-wrap">
+              <section className="auth-section">
+                    { (!this.props.userData || !this.props.userData.uid) ? this.renderLogin() : this.renderLogout() }
+              </section>
+              <section className="payments-section">
+                  {this.renderPaymentsService()}
+              </section>
+          </div>
+      )
+  }
+}
+
+export default Account;

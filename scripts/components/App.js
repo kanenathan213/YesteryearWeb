@@ -1,16 +1,16 @@
-/*
-  App
-*/
-
 import React from 'react';
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
 import ToursList from './ToursList';
+import Firebase from 'firebase';
+
+const ref = new Firebase('https://hey-day-tours.firebaseio.com/');
 
 // Firebase
 import Rebase  from 're-base';
 var base = Rebase.createClass('https://hey-day-tours.firebaseio.com/');
+
 
 @autobind
 class App extends React.Component {
@@ -22,6 +22,88 @@ class App extends React.Component {
       userData : {},
       tours : {}
     };
+  }
+
+  authenticate(provider) {
+      ref.authWithOAuthPopup(provider, this.authHandler, {
+          scope: "public_profile, email"
+      });
+  }
+
+  authHandler(err, authData) {
+      if(err) {
+          return;
+      }
+
+      if(authData) {
+          this.updateAppUserState(authData);
+
+          let endPoint = 'users/' + this.state.userData.uid;
+
+          base.post(endPoint,{
+              data: this.state.userData
+          });
+      }
+
+      localStorage.setItem('yesteryear-token', authData.token);
+  }
+
+  updateAppUserState(data) {
+      this.setState({
+          userData : {
+              uid: data.uid,
+              profpic: data.facebook.profileImageURL,
+              firstName: data.facebook.cachedUserProfile.first_name,
+              lastName: data.facebook.cachedUserProfile.last_name,
+              email: data.facebook.email
+          }
+      });
+  }
+
+  tokenedUserHandler(err, authData) {
+      if(err) {
+          console.log("There was an auth error");
+      }
+
+      let endPoint = 'users/' + authData.uid;
+
+      if(authData) {
+          base.fetch(endPoint, {
+              context: this,
+              then(data) {
+                  this.setState({
+                      userData : {
+                          uid: data.uid,
+                          profpic: data.profpic,
+                          firstName: data.first_name,
+                          lastName: data.last_name,
+                          email: data.email
+                      }
+                  })
+              }
+          })
+      }
+  }
+
+  isNewUser() {
+      return true;
+  }
+
+  deleteAccount() {
+
+      let endPoint = 'users/' + this.state.userData.uid;
+      base.post(endPoint,{
+          data: null
+      });
+      this.logout();
+  }
+
+  logout() {
+      ref.unauth();
+      localStorage.removeItem('yesteryear-token');
+      this.setState({
+          userData: null
+      })
   }
 
   componentWillReceiveProps(nextProps) {
@@ -36,10 +118,23 @@ class App extends React.Component {
     }
   }
 
+  componentWillMount() {
+      var token = localStorage.getItem('yesteryear-token');
+      if(token) {
+          ref.authWithCustomToken(token, this.tokenedUserHandler);
+      }
+  }
+
   componentDidMount() {
-      this.setState({
-          tours : require('../sample-tours')
+
+      base.syncState('/tours', {
+          context : this,
+          state : 'tours'
       });
+
+    //   this.setState({ // local data for dev only
+    //       tours : require('../sample-tours')
+    //   });
   }
 
   content() {
@@ -55,7 +150,11 @@ class App extends React.Component {
       else {
           return React.Children.map(this.props.children, child =>
               React.cloneElement(child, {
-                tours: this.state.tours
+                tours: this.state.tours,
+                authenticate: this.authenticate,
+                logout: this.logout,
+                deleteAccount: this.deleteAccount,
+                userData: this.state.userData
               }
             )
           );
