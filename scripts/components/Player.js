@@ -4,6 +4,8 @@ import autobind from 'autobind-decorator';
 
 import ProgressLabel from '../../node_modules/react-progress-label/dist/progress-label';
 
+let progressUpdate;
+
 @autobind
 class Track extends Component {
 
@@ -53,6 +55,8 @@ class Track extends Component {
         this.audioTag.removeEventListener('loadeddata', this.playerEvent.loadEnd);
         this.audioTag.removeEventListener('loadstart', this.playerEvent.loadStart);
         this.audioTag.removeEventListener('suspend', this.playerEvent.loadStart);
+        console.log("unmount");
+        this._progressTracking("stop");
       }
 
       _play() {
@@ -73,11 +77,10 @@ class Track extends Component {
       }
 
       _progressTracking(action) {
-          let progressUpdate;
           if (action === "start") {
               progressUpdate = setInterval(this._updateProgress, 1000);
           }
-          else if ((action === "stop") && progressUpdate !== undefined) {
+          else if (action === "stop") {
               clearInterval(progressUpdate);
           }
       }
@@ -86,6 +89,7 @@ class Track extends Component {
           let duration = this.audioTag.duration;
           let currentTime = this.audioTag.currentTime;
           let newProgress = (currentTime / duration ) * 100;
+          console.log("updated fired");
           this.setState({
             progress: newProgress
           });

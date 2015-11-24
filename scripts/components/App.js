@@ -123,14 +123,20 @@ class App extends React.Component {
       if(token) {
           ref.authWithCustomToken(token, this.tokenedUserHandler);
       }
+
+      let toursEndpoint = 'tours/';
+      base.fetch(toursEndpoint, {
+          context: this,
+          then(data) {
+              this.setState({
+                  tours : data
+                  }
+              )}
+      });
+
   }
 
   componentDidMount() {
-
-      base.syncState('/tours', {
-          context : this,
-          state : 'tours'
-      });
 
     //   this.setState({ // local data for dev only
     //       tours : require('../sample-tours')

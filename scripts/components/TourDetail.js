@@ -25,6 +25,11 @@ class TourDetail extends React.Component {
                               <div className="tour-detail-name">{ details.name }</div>
                               <div className="tour-detail-stops">{ details.totalTime } minutes</div>
                           </div>
+                          <div className="tour-detail-price-wrap">
+                              <div className="detail-price">
+                                  ${ details.price }
+                              </div>
+                          </div>
                       </section>
                       <StopsList details={details}/>
                   </div>
