@@ -3979,6 +3979,35 @@ input[type=submit].facebook-login:active {
   -webkit-animation: spin 1s infinite linear;
           animation: spin 1s infinite linear;
 }
+.global-header {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin: auto 5%;
+  padding: 1%;
+  position: relative;
+}
+.global-header .brand {
+  color: #fff;
+  font-family: 'sirin', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.global-header .enter {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 2%;
+  top: 22%;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.3);
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.global-header .enter:hover {
+  background-color: rgba(255,255,255,0.3);
+}
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);

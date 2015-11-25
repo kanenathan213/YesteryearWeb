@@ -8,6 +8,7 @@ import Index from './components/Index';
 import TourDetail from './components/TourDetail';
 import ToursList from './components/ToursList';
 import Account from './components/Account';
+import Connect from './components/Connect';
 
 /*
   Routes
@@ -19,6 +20,7 @@ const routes = (
       <IndexRoute component={Index} />
       <Route path="tours" component={ToursList} />
       <Route path="tours/:tourID" component={TourDetail} />
+      <Route path="connect" component={Connect} />
       <Route path="account" component={Account} />
     </Route>
   </Router>

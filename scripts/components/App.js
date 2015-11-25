@@ -2,6 +2,7 @@ import React from 'react';
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
+import Header from './Header';
 import ToursList from './ToursList';
 import Firebase from 'firebase';
 
@@ -172,6 +173,7 @@ class App extends React.Component {
       <div className="heyday">
           <div className="background-image"></div>
           <div className="background-overlay"></div>
+          <Header userData={this.state.userData} />
           {this.content()}
       </div>
     )

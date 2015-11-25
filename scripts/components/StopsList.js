@@ -51,7 +51,7 @@ class StopsList extends React.Component {
                   </div>
               </ul>
               <div className="detail-cta-wrap">
-                  <Link to={`/account/`}>
+                  <Link to={`/connect/`}>
                       <button className="tour-detail-cta">
                           <span className="cta-label">Buy tour</span>
                       </button>
