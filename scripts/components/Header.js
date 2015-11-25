@@ -15,8 +15,7 @@ class Header extends React.Component {
     renderAccount() {
         return (
             <Link to="/account/" className="account">
-                { this.props.userData.email }
-                <img src={this.props.userData.profpic} />
+                <img src={this.props.userData.profpic} className="profpic"/>
             </Link>
         )
     }
