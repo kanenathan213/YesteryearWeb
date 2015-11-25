@@ -9,7 +9,14 @@ class Account extends React.Component {
 
   renderLogin() {
       return (
-          <button className="fb-connect" onClick={this.props.authenticate.bind(this, 'facebook')}>Connect</button>
+          <section className="login-section">
+              <h3>Sign in or create an account</h3>
+
+              <button className="facebook-login" onClick={this.props.authenticate.bind(this, 'facebook')}>
+                  <i className="ion-social-facebook login-icon"></i>
+                  <span className="login-label">Connect</span>
+              </button>
+          </section>
       )
   }
 
@@ -32,7 +39,7 @@ class Account extends React.Component {
   }
 
   componentDidMount() {
-      
+
   }
 
   render() {
@@ -40,9 +47,6 @@ class Account extends React.Component {
           <div className="account-wrap">
               <section className="auth-section">
                     { (!this.props.userData || !this.props.userData.uid) ? this.renderLogin() : this.renderLogout() }
-              </section>
-              <section className="payments-section">
-                  {this.renderPaymentsService()}
               </section>
           </div>
       )

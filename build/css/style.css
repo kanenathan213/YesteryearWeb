@@ -3238,7 +3238,8 @@ h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 body {
   background: #002b4d;
@@ -3440,24 +3441,14 @@ input[type=submit].facebook-login {
   border: 0;
   border-radius: 10px;
   bottom: 10%;
-  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 2px 2px 6px rgba(0,0,0,0.4);
   color: #fff;
-  padding: 1rem 1.5rem;
-  position: absolute;
-  right: 10%;
+  padding: 0.5rem 1.2rem;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-}
-@media only screen and (min-width: 992px) {
-  button.facebook-login,
-  input[type=submit].facebook-login {
-    bottom: 15%;
-    right: 30%;
-  }
 }
 button.facebook-login:hover,
 input[type=submit].facebook-login:hover,
@@ -3607,24 +3598,25 @@ input[type=submit].facebook-login:active {
 .login-label {
   display: inline-block;
   font-size: 2.5rem;
-  vertical-align: text-bottom;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 @media only screen and (min-width: 992px) {
   .login-label {
     font-size: 1.3rem;
-    vertical-align: text-top;
   }
 }
 .login-icon {
+  border-right: 1px solid rgba(255,255,255,0.4);
   display: inline-block;
-  padding-right: 20px;
-  border-right: 1px solid rgba(255,255,255,0.5);
   font-size: 3.5rem;
+  margin-right: 15px;
+  padding-right: 15px;
 }
 @media only screen and (min-width: 992px) {
   .login-icon {
-    font-size: 1.7rem;
-    padding-right: 10px;
+    font-size: 2rem;
   }
 }
 .tour-wrap {
@@ -3903,7 +3895,6 @@ input[type=submit].facebook-login:active {
   right: 10px;
 }
 .tour-control {
-  height: 100%;
   font-size: 1.5rem;
   right: 27px;
   position: absolute;
@@ -3979,4 +3970,32 @@ input[type=submit].facebook-login:active {
   overflow: hidden;
   position: relative;
   max-height: 80vh;
+}
+.auth-section {
+  padding: 1.5rem 1rem 3rem 1rem;
+  text-align: center;
+}
+.stop-loading {
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }

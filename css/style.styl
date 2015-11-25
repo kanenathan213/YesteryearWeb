@@ -151,17 +151,11 @@ button, input[type=submit] // for auth
     border 0
     border-radius 10px
     bottom 10%
-    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1),2px 2px 6px rgba(0,0,0,0.4)
     color white
-    padding 1rem 1.5rem
-    position absolute
-    right 10%
+    padding .5rem 1.2rem
     text-align center
     text-shadow 0 -1px 0 rgba(0,0,0,0.2)
     transition transform 0.2s ease-out
-    @media only screen and (min-width : medium)
-      bottom 15%
-      right 30%
 
     &:hover,
     &:focus
@@ -273,19 +267,18 @@ button, input[type=submit] // for auth
 .login-label
   display inline-block
   font-size 2.5rem
-  vertical-align text-bottom
+  transform translateY(-5px)
   @media only screen and (min-width : medium)
     font-size 1.3rem
-    vertical-align text-top
 
 .login-icon
+  border-right 1px solid rgba(white, .4)
   display inline-block
-  padding-right 20px
-  border-right 1px solid rgba(white,0.5)
   font-size 3.5rem
+  margin-right 15px
+  padding-right 15px
   @media only screen and (min-width : medium)
-    font-size 1.7rem
-    padding-right 10px
+    font-size 2rem
 
 .tour-wrap
   border-radius 10px
@@ -514,7 +507,6 @@ button, input[type=submit] // for auth
   right 10px
 
 .tour-control
-  height 100%
   font-size 1.5rem
   right 27px
   position absolute
@@ -577,3 +569,14 @@ button, input[type=submit] // for auth
   overflow: hidden;
   position: relative;
   max-height: 80vh;
+
+.auth-section
+  padding 1.5rem 1rem 3rem 1rem
+  text-align center
+
+@keyframes spin
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+
+.stop-loading
+  animation spin 1s infinite linear

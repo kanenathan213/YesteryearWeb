@@ -118,7 +118,7 @@ class Track extends Component {
                     <i className="ion-pause tour-control" onClick={this._stop} /> : null
                 }
                 { this.state.isLoading ?
-                    <i className="ion-load-c tour-control" onClick={this._stop} /> : null
+                    <i className="ion-load-c tour-control stop-loading" onClick={this._stop} /> : null
                 }
                 <audio src={ this.props.stopDetails.audioURL } ref='audio'/>
             </div>

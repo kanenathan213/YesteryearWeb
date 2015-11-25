@@ -17,7 +17,7 @@ class Index extends React.Component {
             <header className="intro-header">
                 <div className="hero-img-overlay"></div>
                 <div className="logo-wrap">
-                    <div className="logo-name">HEYDAY</div>
+                    <div className="logo-name">YESTERYEAR</div>
                     <div className="logo-tagline">Walk with history</div>
                 </div>
                     <Link to="/tours">
