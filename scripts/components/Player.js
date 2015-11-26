@@ -14,7 +14,7 @@ class Track extends Component {
       this.state = {
           elem: null,
           isPlaying : false,
-          isLoading : false,
+          loadState : "notLoaded",
           progress : 0
       };
       this.playerEvent = {};
@@ -26,13 +26,13 @@ class Track extends Component {
 
         this.playerEvent.loadStart = () => {
           this.setState({
-            isLoading: true
+            loadState: "loading"
           });
         };
 
         this.playerEvent.loadEnd = () => {
           this.setState({
-            isLoading: false
+            loadState: "loaded"
           });
         };
 
@@ -40,13 +40,9 @@ class Track extends Component {
           this.setState({
             isPlaying: false
           });
+          this._progressTracking("stop");
         };
-
-        this.audioTag.addEventListener('ended', this.playerEvent.isPlaying);
-        this.audioTag.addEventListener('pause', this.playerEvent.isPlaying);
-        this.audioTag.addEventListener('loadeddata', this.playerEvent.loadEnd);
-        this.audioTag.addEventListener('loadstart', this.playerEvent.loadStart);
-        this.audioTag.addEventListener('suspend', this.playerEvent.loadEnd);
+        this._progressTracking("stop");
       }
 
       componentWillUnmount() {
@@ -55,8 +51,15 @@ class Track extends Component {
         this.audioTag.removeEventListener('loadeddata', this.playerEvent.loadEnd);
         this.audioTag.removeEventListener('loadstart', this.playerEvent.loadStart);
         this.audioTag.removeEventListener('suspend', this.playerEvent.loadStart);
-        console.log("unmount");
-        this._progressTracking("stop");
+      }
+
+      _startLoading() {
+          this.playerEvent.loadStart();
+          this.audioTag.addEventListener('ended', this.playerEvent.isPlaying);
+          this.audioTag.addEventListener('pause', this.playerEvent.isPlaying);
+          this.audioTag.addEventListener('loadeddata', this.playerEvent.loadEnd);
+          this.audioTag.addEventListener('loadstart', this.playerEvent.loadStart);
+          this.audioTag.addEventListener('suspend', this.playerEvent.loadEnd);
       }
 
       _play() {
@@ -89,7 +92,6 @@ class Track extends Component {
           let duration = this.audioTag.duration;
           let currentTime = this.audioTag.currentTime;
           let newProgress = (currentTime / duration ) * 100;
-          console.log("updated fired");
           this.setState({
             progress: newProgress
           });
@@ -111,16 +113,19 @@ class Track extends Component {
                         progressColor="hsla(82, 0%, 93%, 1)">
                     </ProgressLabel>
                 </div>
-                { !this.state.isPlaying && !this.state.isLoading ?
+                { this.state.loadState === "notLoaded" ?
+                    <i className="ion-ios-cloud-download-outline tour-control" onClick={this._startLoading} /> : null
+                }
+                { !this.state.isPlaying && (this.state.loadState === "loaded")  ?
                     <i className="ion-ios-play tour-control" onClick={this._play} /> : null
                 }
-                { this.state.isPlaying && !this.state.isLoading ?
+                { this.state.isPlaying ?
                     <i className="ion-pause tour-control" onClick={this._stop} /> : null
                 }
-                { this.state.isLoading ?
+                { this.state.loadState === "loading" ?
                     <i className="ion-load-c tour-control stop-loading" onClick={this._stop} /> : null
                 }
-                <audio src={ this.props.stopDetails.audioURL } ref='audio'/>
+                <audio preload='auto' src={ this.props.stopDetails.audioURL } ref='audio'/>
             </div>
         )
     }

@@ -3839,7 +3839,7 @@ input[type=submit].facebook-login:active {
 }
 .tour-detail-return {
   color: rgba(255,255,255,0.7);
-  display: block;
+  display: inline-block;
   font-size: 1.5rem;
   margin: auto auto;
   -webkit-transition: color, -webkit-transform 0.2s ease-out;
@@ -3964,7 +3964,7 @@ input[type=submit].facebook-login:active {
 }
 .tour-control {
   font-size: 1.5rem;
-  right: 27px;
+  right: 25px;
   position: absolute;
   top: 22px;
 }
