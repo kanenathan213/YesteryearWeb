@@ -1,0 +1,54 @@
+.global-header-wrap
+  left 25vw
+  margin auto auto auto auto
+  position fixed
+  top 0
+  z-index 3
+
+.global-header
+  border-bottom 1px solid rgba(white,.2)
+  height 70px
+  margin auto auto
+  max-width 960px
+  padding 2%
+  position relative
+  min-width 800px
+
+  .brand
+    color white
+    font-family 'sirin', sans-serif
+    font-size 1.5rem
+    text-decoration none
+    display inline-block
+    .logo
+      max-width 30px
+      position absolute
+      top 20%
+    .logo-text
+      position absolute
+      top 25%
+      left 8%
+
+  .enter
+    color white
+    display inline-block
+    right 2%
+    top 22%
+    font-size 1rem
+    text-decoration none
+    padding .5rem 1rem
+    position absolute
+    border-radius 30px
+    border 1px solid rgba(white,.3)
+    transition background-color .2s ease
+    &:hover
+      background-color rgba(white,.3)
+
+  .account
+    .profpic
+      border-radius 50%
+      box-shadow: inset 1px 1px 2px rgba(255,255,255,0.1), 0px 2px 4px rgba(0,0,0,0.4)
+      max-width 40px
+      position absolute
+      right 2%
+      top 20%

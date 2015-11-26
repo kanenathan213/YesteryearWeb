@@ -10,8 +10,7 @@ class Connect extends React.Component {
   renderLogin() {
       return (
           <section className="login-section">
-              <h3>Sign in or create an account</h3>
-
+              <h3>Sign in or sign up</h3>
               <button className="facebook-login" onClick={this.props.authenticate.bind(this, 'facebook')}>
                   <i className="ion-social-facebook login-icon"></i>
                   <span className="login-label">Connect</span>
@@ -23,11 +22,13 @@ class Connect extends React.Component {
   renderLogout() {
       return (
           <div className="signed-in-wrap">
-              <span>{this.props.userData.firstName} {this.props.userData.lastName}</span>
-              <span>{this.props.userData.email}</span>
-              <img src={this.props.userData.profpic} />
-              <button className="logout" onClick={this.props.logout}>Logout</button>
-              <button className="delete-account" onClick={this.props.deleteAccount}>Delete account</button>
+              <h3>Settings</h3>
+              <h4>Email</h4>
+              <div className="email-field">{this.props.userData.email}</div>
+              <div className="logout-wrapper">
+                  <button className="logout" onClick={this.props.logout}>Logout</button>
+              </div>
+              <div className="delete-account" onClick={this.props.deleteAccount}>Delete account</div>
           </div>
       )
   }

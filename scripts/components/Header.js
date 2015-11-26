@@ -14,7 +14,7 @@ class Header extends React.Component {
 
     renderAccount() {
         return (
-            <Link to="/account/" className="account">
+            <Link to="/connect/" className="account">
                 <img src={this.props.userData.profpic} className="profpic"/>
             </Link>
         )
@@ -22,12 +22,15 @@ class Header extends React.Component {
 
     render() {
         return (
-            <nav className="global-header">
-                <Link to="/tours/" className="brand">
-                    YESTERYEAR
-                </Link>
-                { (!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() }
-            </nav>
+            <header className="global-header-wrap">
+                <nav className="global-header">
+                    <Link to="/tours/" className="brand">
+                        <img src="../../css/images/white-logo.svg" className="logo"/>
+                        <div className="logo-text">YESTERYEAR</div>
+                    </Link>
+                    { (!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() }
+                </nav>
+            </header>
         )
     }
 }

@@ -86,6 +86,64 @@
   font-weight: normal;
   font-style: normal;
 }
+.global-header-wrap {
+  left: 25vw;
+  margin: auto auto auto auto;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.global-header {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  height: 70px;
+  margin: auto auto;
+  max-width: 960px;
+  padding: 2%;
+  position: relative;
+  min-width: 800px;
+}
+.global-header .brand {
+  color: #fff;
+  font-family: 'sirin', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.global-header .brand .logo {
+  max-width: 30px;
+  position: absolute;
+  top: 20%;
+}
+.global-header .brand .logo-text {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+.global-header .enter {
+  color: #fff;
+  display: inline-block;
+  right: 2%;
+  top: 22%;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.3);
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.global-header .enter:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+.global-header .account .profpic {
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.1), 0px 2px 4px rgba(0,0,0,0.4);
+  max-width: 40px;
+  position: absolute;
+  right: 2%;
+  top: 20%;
+}
 @charset "UTF-8";
 /*
   Ionicons, v2.0.0
@@ -3238,8 +3296,15 @@ h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+h4 {
+  font-size: 1.5rem;
   font-weight: bolder;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: left;
 }
 body {
   background: #002b4d;
@@ -3294,13 +3359,11 @@ header.top h3:after {
   bottom: 7px;
 }
 .heyday {
-  background-color: #fff;
   height: 100vh;
   width: 100vw;
   margin: 0;
 }
 .heyday > * {
-  position: relative;
   overflow: scroll;
 }
 .background-image {
@@ -3330,7 +3393,7 @@ header.top h3:after {
 button,
 input[type=submit] {
   background: none;
-  border: 1px solid #000;
+  border-radius: 10px;
   box-shadow: inset 1px 1px 2px rgba(255,255,255,0.1), 0px 2px 4px rgba(0,0,0,0.4);
   font-size: 1.5rem;
   font-family: 'nunito_regular';
@@ -3450,6 +3513,12 @@ input[type=submit].facebook-login {
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
+button.facebook-login .login-label,
+input[type=submit].facebook-login .login-label {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
 button.facebook-login:hover,
 input[type=submit].facebook-login:hover,
 button.facebook-login:focus,
@@ -3506,7 +3575,7 @@ input[type=submit].facebook-login:active {
 .logo-name {
   color: #fff;
   font-family: 'sirin', sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 8.5rem;
 }
 .logo-tagline {
@@ -3598,9 +3667,6 @@ input[type=submit].facebook-login:active {
 .login-label {
   display: inline-block;
   font-size: 2.5rem;
-  -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
 }
 @media only screen and (min-width: 992px) {
   .login-label {
@@ -3726,17 +3792,19 @@ input[type=submit].facebook-login:active {
 }
 .initial-view-wrap {
   background-color: #002b4d;
+  position: relative;
 }
 .list-of-tours-wrap {
-  padding: 2rem;
+  padding: 100px 2rem 2rem;
   position: relative;
 }
 .tour-detail-wrap {
-  color: #fff;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
   background: rgba(0,0,0,0.3);
+  color: #fff;
+  height: 100vh;
+  padding: 100px 2rem 2rem;
+  overflow: auto;
+  width: 100vw;
   z-index: 0;
 }
 .tour-detail-container {
@@ -3963,58 +4031,45 @@ input[type=submit].facebook-login:active {
   text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 .account-wrap {
-  background: #fff;
+  background-color: rgba(255,255,255,0.7);
   border-radius: 10px;
   max-width: 700px;
-  margin: 2% auto auto auto;
+  margin: 130px auto auto auto;
   overflow: hidden;
   position: relative;
   max-height: 80vh;
 }
 .auth-section {
-  padding: 1.5rem 1rem 3rem 1rem;
+  padding: 0.5rem 2rem 3rem 2rem;
   text-align: center;
 }
 .stop-loading {
   -webkit-animation: spin 1s infinite linear;
           animation: spin 1s infinite linear;
 }
-.global-header {
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  margin: auto 5%;
-  padding: 1%;
-  position: relative;
+.delete-account {
+  color: #d64700;
+  display: block;
+  text-decoration: underline;
+  text-align: left;
+  margin-top: 5%;
 }
-.global-header .brand {
-  color: #fff;
-  font-family: 'sirin', sans-serif;
-  font-size: 1.5rem;
-  text-decoration: none;
+.delete-account:hover {
+  cursor: pointer;
 }
-.global-header .enter {
-  color: #fff;
-  display: inline-block;
-  right: 2%;
-  top: 22%;
-  font-size: 1rem;
-  text-decoration: none;
+.email-field {
+  text-align: left;
+  margin-top: 1%;
+}
+.logout-wrapper {
+  text-align: left;
+  margin-top: 3%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid rgba(64,64,64,0.3);
+}
+.logout {
+  background-color: #fff;
   padding: 0.5rem 1rem;
-  position: absolute;
-  border-radius: 30px;
-  border: 1px solid rgba(255,255,255,0.3);
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-.global-header .enter:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-.global-header .account .profpic {
-  border-radius: 50%;
-  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.1), 0px 2px 4px rgba(0,0,0,0.4);
-  max-width: 40px;
-  position: absolute;
-  right: 2%;
-  top: 20%;
 }
 @-webkit-keyframes spin {
   from {

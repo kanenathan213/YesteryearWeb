@@ -1,6 +1,7 @@
 import React from 'react';
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
+import { History } from 'react-router';
 
 import Header from './Header';
 import ToursList from './ToursList';
@@ -46,6 +47,7 @@ class App extends React.Component {
           });
       }
 
+      this.props.history.replaceState(null, '/tours/');
       localStorage.setItem('yesteryear-token', authData.token);
   }
 
@@ -105,6 +107,7 @@ class App extends React.Component {
       this.setState({
           userData: null
       })
+      this.props.history.replaceState(null, '/');
   }
 
   componentWillReceiveProps(nextProps) {
