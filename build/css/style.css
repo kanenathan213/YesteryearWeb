@@ -3355,6 +3355,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Nunito-Regular', sans-serif;
 }
+.benefit-section {
+  *zoom: 1;
+  *zoom: 1;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefit-section:before,
+.benefit-section:after {
+  content: '';
+  display: table;
+}
+.benefit-section:after {
+  clear: both;
+}
+.benefit-section:before,
+.benefit-section:after {
+  content: '';
+  display: table;
+}
+.benefit-section:after {
+  clear: both;
+}
+.ben {
+  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+}
+.ben:nth-child(n) {
+  margin-right: 30px;
+  float: left;
+  clear: none;
+}
+.ben:last-child {
+  margin-right: 0;
+}
+.ben:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+.ben:nth-child(3n + 1) {
+  clear: left;
+}
 header.top {
   text-align: center;
 }
@@ -3530,13 +3571,12 @@ button.view-tour-list-button .login-label,
 input[type=submit].view-tour-list-button .login-label {
   display: inline-block;
   font-size: 2.5rem;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
 }
 @media only screen and (min-width: 992px) {
   button.view-tour-list-button .login-label,
   input[type=submit].view-tour-list-button .login-label {
     font-size: 1.3rem;
-    vertical-align: text-top;
   }
 }
 button.facebook-login,

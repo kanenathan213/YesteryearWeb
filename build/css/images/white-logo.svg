@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="88px" height="129px" viewBox="0 0 88 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>content</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,67.1239925 L0,2.99267654 C0,1.33986693 1.33600626,-1.75415238e-14 2.99093609,-1.75415238e-14 L55.6952002,-1.75415238e-14 C57.3470486,-1.75415238e-14 58.6861363,1.3408272 58.6861363,2.99267654 L58.6861363,67.1239925 L0,67.1239925 Z M15.1737924,66.6454371 L15.1737924,8.40408939 L13.3309023,8.40408939 L13.3309023,66.6454371 L15.1737924,66.6454371 Z M30.2645132,66.6430872 L30.2645132,5.26777552 L28.4216231,5.26777552 L28.4216231,66.6430872 L30.2645132,66.6430872 Z M45.355234,66.6454371 L45.355234,8.40408939 L43.5123439,8.40408939 L43.5123439,66.6454371 L45.355234,66.6454371 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-2-Copy" sketch:type="MSArtboardGroup" transform="translate(-59.000000, -31.000000)">
+            <g id="content" sketch:type="MSLayerGroup" transform="translate(59.000000, 14.000000)">
+                <g id="col-top" transform="translate(0.000000, 56.089407)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-1" x="0" y="0" width="87.5318803" height="8.93028446" rx="2"></rect>
+                    <rect id="Rectangle-1-Copy" x="7.83867584" y="10.5482212" width="73.1609745" height="6.69771334" rx="2"></rect>
+                </g>
+                <g id="column" transform="translate(15.072649, 78.020117)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                </g>
+                <g id="sound-left" transform="translate(43.961418, 31.367009) rotate(-315.000000) translate(-43.961418, -31.367009) translate(22.461418, 9.867009)" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup">
+                    <path d="M40.331814,19.760955 C28.9982111,19.760955 19.8105107,28.9301318 19.8105107,40.2408847" id="Oval-1"></path>
+                    <path d="M41.0368233,10.5830038 C24.231826,10.5830038 10.608684,24.1786798 10.608684,40.9497961" id="Oval-1-Copy"></path>
+                    <path d="M42.4499881,0.699750469 C19.3919686,0.699750469 0.699750469,19.3542826 0.699750469,42.3658142" id="Oval-1-Copy-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

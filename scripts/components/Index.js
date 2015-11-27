@@ -24,25 +24,21 @@ class Index extends React.Component {
                         <ViewTourListButton />
                     </Link>
             </header>
-            <section className="benefit benefit-1">
-                <div className="benefit-img-overlay"></div>
-                <div className="benefit-img-overlay-2"></div>
-                <div className="benefit-statement">
-                    Fascinating audio tours for historical places
+            <section className="benefit-section">
+                <div className="ben ben1">
+                    <div className="benefit-writing">
+                        First thing
+                    </div>
                 </div>
-            </section>
-            <section className="benefit benefit-2">
-                <div className="benefit-img-overlay"></div>
-                <div className="benefit-img-overlay-2"></div>
-                <div className="benefit-statement">
-                    Easily listen from your phone
+                <div className="ben ben2">
+                    <div className="benefit-writing">
+                        Second thing
+                    </div>
                 </div>
-            </section>
-            <section className="benefit benefit-3">
-                <div className="benefit-img-overlay"></div>
-                <div className="benefit-img-overlay-2"></div>
-                <div className="benefit-statement">
-                    Skip the line and save some money
+                <div className="ben ben3">
+                    <div className="benefit-writing">
+                        Third thing
+                    </div>
                 </div>
             </section>
         </div>
@@ -51,3 +47,7 @@ class Index extends React.Component {
 }
 
 export default Index;
+
+// Easily listen from your phone
+
+// Skip the line and save some money
