@@ -87,54 +87,84 @@
   font-style: normal;
 }
 .global-header-wrap {
-  left: 25vw;
   margin: auto auto auto auto;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 3;
 }
 .global-header {
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  height: 70px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  height: 150px;
   margin: auto auto;
-  max-width: 960px;
+  max-width: 90%;
   padding: 2%;
   position: relative;
-  min-width: 800px;
+}
+@media only screen and (min-width: 992px) {
+  .global-header {
+    height: 70px;
+    max-width: 960px;
+    min-width: 800px;
+  }
 }
 .global-header .brand {
   color: #fff;
   font-family: 'sirin', sans-serif;
-  font-size: 1.5rem;
+  font-size: 5rem;
   text-decoration: none;
   display: inline-block;
 }
+@media only screen and (min-width: 992px) {
+  .global-header .brand {
+    font-size: 2rem;
+  }
+}
 .global-header .brand .logo {
-  max-width: 30px;
+  max-width: 70px;
   position: absolute;
   top: 20%;
 }
+@media only screen and (min-width: 992px) {
+  .global-header .brand .logo {
+    max-width: 30px;
+  }
+}
 .global-header .brand .logo-text {
+  top: 20%;
   position: absolute;
-  top: 25%;
-  left: 8%;
+  left: 15%;
+}
+@media only screen and (min-width: 992px) {
+  .global-header .brand .logo-text {
+    top: 15%;
+    left: 8%;
+  }
 }
 .global-header .enter {
   color: #fff;
   display: inline-block;
-  right: 2%;
-  top: 22%;
-  font-size: 1rem;
+  right: 0;
+  top: 30%;
+  font-size: 2.2rem;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 2.5rem;
   position: absolute;
-  border-radius: 30px;
+  border-radius: 40px;
   border: 1px solid rgba(255,255,255,0.3);
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
 .global-header .enter:hover {
   background-color: rgba(255,255,255,0.3);
+}
+@media only screen and (min-width: 992px) {
+  .global-header .enter {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    right: 2%;
+    top: 22%;
+  }
 }
 .global-header .account .profpic {
   border-radius: 50%;
@@ -3269,6 +3299,19 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 13px;
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 992px) {
+  html {
+    font-size: 17px;
+  }
+}
 h1 {
   font-family: 'sirin', sans-serif;
   text-align: center;
@@ -3311,7 +3354,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Nunito-Regular', sans-serif;
-  font-size: 1rem;
 }
 header.top {
   text-align: center;
@@ -3575,8 +3617,8 @@ input[type=submit].facebook-login:active {
 .logo-name {
   color: #fff;
   font-family: 'sirin', sans-serif;
-  font-size: 7rem;
-  line-height: 8.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
 }
 .logo-tagline {
   color: rgba(255,255,255,0.5);
@@ -3730,7 +3772,7 @@ input[type=submit].facebook-login:active {
 }
 .tour-name {
   color: #fff;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 5px;
   font-weight: lighter;
   z-index: 2;
@@ -3767,10 +3809,10 @@ input[type=submit].facebook-login:active {
 .tour-price {
   position: absolute;
   right: 5%;
-  bottom: 5%;
+  bottom: 7%;
   z-index: 2;
   color: #fff;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 @media only screen and (min-width: 1200px) {
   .tour-price {
@@ -3783,7 +3825,7 @@ input[type=submit].facebook-login:active {
   bottom: 7.5%;
   z-index: 2;
   color: rgba(255,255,255,0.8);
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 @media only screen and (min-width: 1200px) {
   .tour-stops {
@@ -3795,8 +3837,14 @@ input[type=submit].facebook-login:active {
   position: relative;
 }
 .list-of-tours-wrap {
-  padding: 100px 2rem 2rem;
+  padding: 20% 2rem 2rem;
   position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .list-of-tours-wrap {
+    padding: 100px 2rem 2rem;
+    position: relative;
+  }
 }
 .tour-detail-wrap {
   background: rgba(0,0,0,0.3);
