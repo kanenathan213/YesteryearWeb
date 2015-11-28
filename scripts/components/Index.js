@@ -14,31 +14,43 @@ class Index extends React.Component {
     render() {
       return (
         <div className="initial-view-wrap">
-            <header className="intro-header">
+            <section className="intro-header">
                 <div className="hero-img-overlay"></div>
-                <div className="logo-wrap">
-                    <div className="logo-name">YESTERYEAR</div>
-                    <div className="logo-tagline">Walk with history</div>
+                <div className="intro-header-content-wrap">
+                    <div className="intro-header-content">
+                        <div className="logo-wrap">
+                            <div className="logo-name">YESTERYEAR</div>
+                            <div className="logo-tagline">Walk with history</div>
+                        </div>
+                        <div className="index-cta-wrap">
+                            <Link to="/tours">
+                                <ViewTourListButton />
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-                    <Link to="/tours">
-                        <ViewTourListButton />
-                    </Link>
-            </header>
+            </section>
             <section className="benefit-section">
                 <div className="ben ben1">
                     <div className="benefit-writing">
-                        First thing
+                        High-quality audio tours for historical places
                     </div>
+                    <div className="benefit-img-overlay"></div>
+                    <div className="benefit-img-overlay-2"></div>
                 </div>
                 <div className="ben ben2">
                     <div className="benefit-writing">
-                        Second thing
+                        Play tours right from your phone
                     </div>
+                    <div className="benefit-img-overlay"></div>
+                    <div className="benefit-img-overlay-2"></div>
                 </div>
                 <div className="ben ben3">
                     <div className="benefit-writing">
-                        Third thing
+                        Skip the line and avoid expensive, dull tours
                     </div>
+                    <div className="benefit-img-overlay"></div>
+                    <div className="benefit-img-overlay-2"></div>
                 </div>
             </section>
         </div>
@@ -48,6 +60,6 @@ class Index extends React.Component {
 
 export default Index;
 
-// Easily listen from your phone
+// Play tours right from your phone
 
-// Skip the line and save some money
+// Skip the line and avoid expensive, dry tours
