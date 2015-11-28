@@ -1,0 +1,246 @@
+.tour-detail-wrap
+  background rgba(0, 0, 0, 0.3)
+  color white
+  height 100vh
+  padding 15% 2% 2rem
+  overflow auto
+  width 100vw
+  z-index 0
+  @media only screen and (min-width : medium)
+    padding 5% 2rem 2rem
+
+.tour-detail-nav
+  margin 5% auto
+  padding 0 1%
+  position relative
+  text-align center
+  @media only screen and (min-width : medium)
+    margin 2% auto
+    text-align left
+    width 700px
+
+.tour-detail
+  background white
+  border-radius 10px
+  width 100%
+  margin 2% auto auto auto
+  overflow hidden
+  position relative
+  max-height 80vh
+  @media only screen and (min-width : medium)
+    max-width 700px
+
+.return-label
+  display inline-block
+  margin-left 2%
+  @media only screen and (min-width : medium)
+    margin-left 10px
+
+.return-wrap
+  width 100%
+  text-align center
+
+.tour-detail-return
+  color white
+  display inline-block
+  font-size 3rem
+  margin auto auto
+  transition color,transform .2s ease-out
+  text-decoration none
+  z-index 2
+  width 100%
+  @media only screen and (min-width : medium)
+    color rgba(white,0.7)
+    font-size 1.5rem
+  &:hover
+    color white
+    transform translateX(-3px)
+
+.tour-detail-top-wrap
+  color white
+  height 15vh
+  overflow hidden
+  position relative
+  text-shadow 0 1px 0 rgba(0,0,0,0.4)
+  width 100%
+  z-index 0
+  @media only screen and (min-width : medium)
+    height 200px
+  .tour-detail-thumbnail
+    position absolute
+    width 100%
+    transform translateY(-20%)
+    z-index 0
+  .tour-detail-overlay
+    position absolute
+    width 100%
+    height 100%
+    background rgba(black,0.3)
+    z-index 1
+  .tour-detail-title-wrap
+    position absolute
+    z-index 2
+    font-weight bolder
+    left 5%
+    bottom 10%
+  .tour-detail-name
+    font-size 5rem
+    @media only screen and (min-width : medium)
+      font-size 3rem
+  .tour-detail-stops
+    z-index 2
+    font-size 2.5rem
+    font-weight lighter
+
+.cta-section
+  text-align center
+  transform translateY(-40%)
+
+.tour-detail-desc
+  color text-lt-bg
+  padding 1rem 2rem
+
+.list-of-stops-wrap
+  border-bottom-left-radius 10px
+  overflow auto
+  max-height 45vh
+
+.list-of-stops
+  color text-lt-bg
+  list-style-type none
+  margin 0
+  padding 0
+
+.tour-stop-wrap
+  border-bottom 1px solid rgba(text-lt-bg, 0.2)
+  height 150px
+  position relative
+  transition background-color 0.2s ease
+  @media only screen and (min-width : medium)
+    height 70px
+  &:hover
+    background-color aliceblue
+    cursor pointer
+  &:last-child
+    border none
+  &:first-child
+    border-bottom 1px solid rgba(text-lt-bg, 0.2)
+
+.stop-figure
+  display inline-block
+  height 150px
+  @media only screen and (min-width : medium)
+    height 70px
+
+.stop-thumbnail
+  display inline-block
+  width 150px
+  height 150px
+  @media only screen and (min-width : medium)
+    width 70px
+    height 70px
+
+.stop-text-wrapper
+  display inline-block
+  height 100%
+  padding 3rem 3rem
+  vertical-align top
+  @media only screen and (min-width : medium)
+    padding 1.5rem 1rem
+
+.stop-name
+  font-size 3rem
+  font-weight lighter
+  margin-top 5px
+  @media only screen and (min-width : medium)
+    font-size 1rem
+
+.detail-cta-wrap
+  border-bottom 0
+  bottom 5%
+  padding 1rem 2rem
+  position absolute
+  text-align center
+  width 100%
+
+.cta-label
+  display inline-block
+  text-shadow 0 -1px 0 rgba(0, 0, 0, .2)
+
+.progress-bar
+  width 100px
+  height 100px
+  @media only screen and (min-width : medium)
+    width 50px
+    height 50px
+
+.progress-bar-wrapper
+  position absolute
+  top 20px
+  right 20px
+  @media only screen and (min-width : medium)
+    top 10px
+    right 10px
+
+.tour-control
+  font-size 3rem
+  left 30%
+  position absolute
+  top 28%
+  @media only screen and (min-width : medium)
+    font-size 1.5rem
+    left 30%
+    top 25%
+
+.paid-stops
+  height 100%
+  opacity 0.2
+  position relative
+  width 100%
+
+.pay-wall-overlay
+  height 100%
+  left 0
+  position absolute
+  top 0
+  width 100%
+  z-index 2
+
+.tour-detail-cta
+  background-image linear-gradient(to bottom, lighten(red, 40%), red)
+  border 0
+  border-radius 10px
+  color white
+  display inline-block
+  font-size 3rem
+  font-weight lighter
+  padding 1.5rem 3rem
+  transition transform 0.2s ease-out
+  z-index 3
+  @media only screen and (min-width : medium)
+    font-size 1.5rem
+    padding .8rem 1rem
+  &:hover,
+  &:focus
+    background-image linear-gradient(to bottom, lighten(red, 50%), lighten(red, 10%))
+    border-radius 10px
+    transform scale(1.05, 1.05)
+    transform-origin center
+  &:active
+    background-image linear-gradient(to bottom, lighten(red, 20%), red)
+    outline-width 0
+    transform scale(.95, .95)
+
+.tour-detail-price-wrap
+  position absolute
+  right 5%
+  bottom 10%
+  z-index 2
+
+.detail-price
+  color white
+  display inline-block
+  font-size 4rem
+  text-shadow 0px 1px 1px rgba(black .2)
+  @media only screen and (min-width : medium)
+    font-size 2rem

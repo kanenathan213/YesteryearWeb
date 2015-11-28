@@ -116,10 +116,12 @@ button, input[type=submit] // for auth
     border-radius 10px
     bottom 10%
     color white
-    padding .5rem 1.2rem
+    padding 2rem 2.5rem
     text-align center
     text-shadow 0 -1px 0 rgba(0,0,0,0.2)
     transition transform 0.2s ease-out
+    @media only screen and (min-width : medium)
+      padding .5rem 1.2rem
     .login-label
       transform translateY(-5px)
     &:hover,
@@ -134,18 +136,21 @@ button, input[type=submit] // for auth
 
 .login-label
   display inline-block
-  font-size 2.5rem
+  font-size 4rem
   @media only screen and (min-width : medium)
     font-size 1.3rem
 
 .login-icon
-  border-right 1px solid rgba(white, .4)
+  border-right 1px solid white
   display inline-block
-  font-size 3.5rem
-  margin-right 15px
-  padding-right 15px
+  font-size 5rem
+  margin-right 30px
+  padding-right 30px
   @media only screen and (min-width : medium)
+    border-right 1px solid rgba(white, .4)
     font-size 2rem
+    margin-right 15px
+    padding-right 15px
 
 .tour-wrap
   border-radius 10px
@@ -234,214 +239,23 @@ button, input[type=submit] // for auth
     padding 100px 2rem 2rem
     position relative
 
-.tour-detail-wrap
-  background rgba(0, 0, 0, 0.3)
-  color white
-  height 100vh
-  padding 100px 2rem 2rem
-  overflow auto
-  width 100vw
-  z-index 0
-
-.tour-detail-container
-  margin 2% auto
-  padding 0 1%
-  position relative
-  @media only screen and (min-width : large)
-    width 700px
-
-.return-label
-  display inline-block
-  margin-left 10px
-
 .dummy
   display none
 
-.tour-detail
-  background white
+.connect-wrap
   border-radius 10px
+  color white
   max-width 700px
-  margin 2% auto auto auto
+  margin 20% auto auto
   overflow hidden
   position relative
   max-height 80vh
-
-.return-wrap
-  width 100%
-  text-align center
-
-.tour-detail-return
-  color rgba(white,0.7)
-  display inline-block
-  font-size 1.5rem
-  margin auto auto
-  transition color,transform .2s ease-out
-  text-decoration none
-  z-index 2
-  &:hover
-    color white
-    transform translateX(-3px)
-
-.tour-detail-top-wrap
-  color white
-  height 200px
-  overflow hidden
-  position relative
-  text-shadow 0 1px 0 rgba(0,0,0,0.4)
-  width 100%
-  z-index 0
-  .tour-detail-thumbnail
-    position absolute
-    width 100%
-    transform translateY(-20%)
-    z-index 0
-  .tour-detail-overlay
-    position absolute
-    width 100%
-    height 100%
-    background rgba(black,0.3)
-    z-index 1
-  .tour-detail-title-wrap
-    position absolute
-    z-index 2
-    font-size 2.5rem
-    font-weight bolder
-    left 5%
-    bottom 10%
-  .tour-detail-stops
-    z-index 2
-    font-size 1.5rem
-    font-weight lighter
-
-.cta-section
-  text-align center
-  transform translateY(-40%)
-
-.tour-detail-desc
-  color text-lt-bg
-  padding 1rem 2rem
-
-.list-of-stops-wrap
-  border-bottom-left-radius 10px
-  overflow auto
-  max-height 45vh
-
-.list-of-stops
-  color text-lt-bg
-  list-style-type none
-  margin 0
-  padding 0
-
-.tour-stop-wrap
-  border-bottom 1px solid rgba(text-lt-bg, 0.2)
-  height 70px
-  position relative
-  transition background-color 0.2s ease
-  &:hover
-    background-color aliceblue
-    cursor pointer
-  &:last-child
-    border none
-  &:first-child
-    border-bottom 1px solid rgba(text-lt-bg, 0.2)
-
-.stop-figure
-  display inline-block
-  height 70px
-
-.stop-thumbnail
-  display inline-block
-  width 70px
-  height 70px
-
-.stop-text-wrapper
-  display inline-block
-  height 100%
-  padding 25px 2%
-  vertical-align top
-
-.detail-cta-wrap
-  border-bottom 0
-  bottom 0
-  left 35%
-  padding 1rem 2rem
-  position absolute
-  text-align center
-
-.cta-label
-  display inline-block
-  text-shadow 0 -1px 0 rgba(0, 0, 0, .2)
-
-.progress-bar-wrapper
-  position absolute
-  top 10px
-  right 10px
-
-.tour-control
-  font-size 1.5rem
-  right 25px
-  position absolute
-  top 22px
-
-.paid-stops
-  height 100%
-  opacity 0.2
-  position relative
-  width 100%
-
-.pay-wall-overlay
-  height 100%
-  left 0
-  position absolute
-  top 0
-  width 100%
-  z-index 2
-
-.tour-detail-cta
-  background-image linear-gradient(to bottom, lighten(red, 40%), red)
-  border 0
-  border-radius 10px
-  color white
-  display inline-block
-  font-size 1.5rem
-  font-weight lighter
-  padding .8rem 1rem
-  transition transform 0.2s ease-out
-  z-index 3
-
-  &:hover,
-  &:focus
-    background-image linear-gradient(to bottom, lighten(red, 50%), lighten(red, 10%))
-    border-radius 10px
-    transform scale(1.05, 1.05)
-    transform-origin center
-  &:active
-    background-image linear-gradient(to bottom, lighten(red, 20%), red)
-    outline-width 0
-    transform scale(.95, .95)
-
-.tour-detail-price-wrap
-  position absolute
-  right 5%
-  bottom 10%
-  z-index 2
-
-.detail-price
-  color white
-  display inline-block
-  font-size 2rem
-  text-shadow 0px 1px 1px rgba(black .2)
-
-.account-wrap
-  background-color rgba(white, .7)
-  border-radius 10px
-  max-width 700px
-  margin 130px auto auto auto
-  overflow hidden
-  position relative
-  max-height 80vh
+  text-shadow 0 1px 1px rgba(0, 0, 0, .8)
+  @media only screen and (min-width : large)
+    margin 10% auto auto
 
 .auth-section
+ font-size 3rem
   padding .5rem 2rem 3rem 2rem
   text-align center
 
@@ -474,3 +288,8 @@ button, input[type=submit] // for auth
 .logout
   background-color white
   padding .5rem 1rem
+  font-size 2rem
+
+.login-button-wrap
+  width 100%
+  text-align center

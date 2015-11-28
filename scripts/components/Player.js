@@ -107,24 +107,25 @@ class Track extends Component {
                         progressWidth={5}
                         trackWidth={4}
                         cornersWidth={0}
-                        size={50}
+                        size={100}
                         fillColor="transparent"
                         trackColor="hsla(206, 100%, 15%, 1)"
-                        progressColor="hsla(82, 0%, 93%, 1)">
+                        progressColor="hsla(82, 0%, 93%, 1)"
+                        className="progress-bar">
                     </ProgressLabel>
+                    { this.state.loadState === "notLoaded" ?
+                        <i className="ion-ios-cloud-download-outline tour-control" onClick={this._startLoading} /> : null
+                    }
+                    { !this.state.isPlaying && (this.state.loadState === "loaded")  ?
+                        <i className="ion-ios-play tour-control" onClick={this._play} /> : null
+                    }
+                    { this.state.isPlaying ?
+                        <i className="ion-pause tour-control" onClick={this._stop} /> : null
+                    }
+                    { this.state.loadState === "loading" ?
+                        <i className="ion-load-c tour-control stop-loading" onClick={this._stop} /> : null
+                    }
                 </div>
-                { this.state.loadState === "notLoaded" ?
-                    <i className="ion-ios-cloud-download-outline tour-control" onClick={this._startLoading} /> : null
-                }
-                { !this.state.isPlaying && (this.state.loadState === "loaded")  ?
-                    <i className="ion-ios-play tour-control" onClick={this._play} /> : null
-                }
-                { this.state.isPlaying ?
-                    <i className="ion-pause tour-control" onClick={this._stop} /> : null
-                }
-                { this.state.loadState === "loading" ?
-                    <i className="ion-load-c tour-control stop-loading" onClick={this._stop} /> : null
-                }
                 <audio preload='auto' src={ this.props.stopDetails.audioURL } ref='audio'/>
             </div>
         )

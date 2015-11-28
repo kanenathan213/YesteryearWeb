@@ -12,7 +12,7 @@ class TourDetail extends React.Component {
       if (details) {
           return (
               <div className="tour-detail-wrap">
-                  <div className="tour-detail-container">
+                  <div className="tour-detail-nav">
                       <Link to={"/tours"} className="tour-detail-return">
                           <i className="ion-chevron-left"></i><span className="return-label">Tours</span>
                       </Link>
