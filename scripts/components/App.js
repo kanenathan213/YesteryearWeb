@@ -5,14 +5,13 @@ import { History } from 'react-router';
 
 import Header from './Header';
 import ToursList from './ToursList';
-import Firebase from 'firebase';
 
+import Firebase from 'firebase';
 const ref = new Firebase('https://hey-day-tours.firebaseio.com/');
 
 // Firebase
 import Rebase  from 're-base';
-var base = Rebase.createClass('https://hey-day-tours.firebaseio.com/');
-
+const base = Rebase.createClass('https://hey-day-tours.firebaseio.com/');
 
 @autobind
 class App extends React.Component {
@@ -88,10 +87,6 @@ class App extends React.Component {
       }
   }
 
-  isNewUser() {
-      return true;
-  }
-
   deleteAccount() {
 
       let endPoint = 'users/' + this.state.userData.uid;
@@ -137,14 +132,6 @@ class App extends React.Component {
                   }
               )}
       });
-
-  }
-
-  componentDidMount() {
-
-    //   this.setState({ // local data for dev only
-    //       tours : require('../sample-tours')
-    //   });
   }
 
   content() {

@@ -20,12 +20,16 @@ class Index extends React.Component {
                     <div className="intro-header-content">
                         <div className="logo-wrap">
                             <div className="logo-name">YESTERYEAR</div>
-                            <div className="logo-tagline">Walk with history</div>
+                            <div className="logo-tagline">Every place has a story</div>
                         </div>
                         <div className="index-cta-wrap">
-                            <Link to="/tours">
-                                <ViewTourListButton />
-                            </Link>
+                            {/*<Link to="/tours">
+                            <ViewTourListButton />
+                        </Link>
+                                */}
+                                <div className="pre-launch-message">
+                                    We'll be launching on iOS in early 2016.
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -33,7 +37,7 @@ class Index extends React.Component {
             <section className="benefit-section">
                 <div className="ben ben1">
                     <div className="benefit-writing">
-                        High-quality audio tours for historical places
+                        On-demand audio tours for historical places
                     </div>
                     <div className="benefit-img-overlay"></div>
                     <div className="benefit-img-overlay-2"></div>
@@ -47,7 +51,7 @@ class Index extends React.Component {
                 </div>
                 <div className="ben ben3">
                     <div className="benefit-writing">
-                        Skip the line and avoid expensive, dull tours
+                        Skip the line and avoid expensive, dry tours
                     </div>
                     <div className="benefit-img-overlay"></div>
                     <div className="benefit-img-overlay-2"></div>

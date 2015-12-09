@@ -9,7 +9,6 @@ import Tour from './Tour';
 class ToursList extends React.Component {
 
   renderTour(key) {
-      let tourSlug = h.slugify(this.props.tours[key].name);
       return (
           <Link key={key} to={`/tours/${key}`}>
               <Tour key={key} index={key} details={this.props.tours[key]}/>

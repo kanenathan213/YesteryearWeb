@@ -14,7 +14,7 @@ class Header extends React.Component {
 
     renderAccount() {
         return (
-            <Link to="/connect/" className="account">
+            <Link to="/" className="account"> {/* switch to= back to /tours after launch */}
                 <img src={this.props.userData.profpic} className="profpic"/>
             </Link>
         )
@@ -28,7 +28,7 @@ class Header extends React.Component {
                         <img src="../../css/images/white-logo.svg" className="logo"/>
                         <div className="logo-text">YESTERYEAR</div>
                     </Link>
-                    { (!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() }
+                    { /*(!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() */}
                 </nav>
             </header>
         )

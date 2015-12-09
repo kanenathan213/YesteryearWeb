@@ -9,20 +9,32 @@
   position relative
   min-height 30vh
   @media only screen and (min-width : medium)
-    column('1/3')
-    height auto
+    min-height 300px
   &.ben1
     background url(https://s3-us-west-2.amazonaws.com/yesteryear-images/louvre.jpg)
     background-size cover
     background-repeat no-repeat
+    background-position-y center
+    .benefit-writing
+      @media only screen and (min-width : medium)
+        text-align left
   &.ben2
     background url(https://s3-us-west-2.amazonaws.com/yesteryear-images/people-hand-iphone-smartphone.jpg)
-    background-size cover
     background-repeat no-repeat
+    background-size cover
+    .benefit-writing
+      @media only screen and (min-width : medium)
+        text-align center
+
   &.ben3
     background url(https://s3-us-west-2.amazonaws.com/yesteryear-images/colusseum.jpg)
     background-size cover
     background-repeat no-repeat
+    background-position-y center
+    .benefit-writing
+      @media only screen and (min-width : medium)
+        text-align right
+
   .benefit-img-overlay,
   .benefit-img-overlay-2
     top 0
@@ -32,7 +44,6 @@
     width 100%
     z-index 0
   .benefit-writing
-    text-align center
     font-size 3rem
     height 100%
     left 0
@@ -41,8 +52,8 @@
     width 100%
     z-index 1
     @media only screen and (min-width : medium)
-      font-size 1rem
-      padding 4rem 1rem
+      font-size 1.5rem
+      padding 7rem 1rem
 
 .benefit-img-overlay
       background-image linear-gradient(to right, rgba(dark-blue, 1) 2%, rgba(dark-blue, 0.1), rgba(dark-blue, 1) 98%)
