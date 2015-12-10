@@ -1,0 +1,45 @@
+$animation-length = 2s
+$animation-delay = $animation-length/4
+
+#logo * {
+  fill white
+}
+
+.svg-logo
+  max-width 250px
+  position absolute
+  top 0
+  padding-top 20px
+  // @media only screen and (min-width : medium)
+  //   max-width 300px
+
+.soundwave {
+  opacity: 1;
+  animation: eminate-up $animation-length infinite;
+  animation-delay: $animation-delay;
+  animation-timing-function: linear;
+  &:nth-child(2) {
+    animation-delay: $animation-delay+.3s;
+  }
+  &:nth-child(3) {
+    animation-delay: $animation-delay+.6s;
+  }
+}
+
+@keyframes eminate-up {
+  0% {
+    opacity: .7;
+    transform: translateY(30px) scale(.4);
+    transform-origin: 50% 0;
+  }
+  70% { // ends at 70% to create at paused interval between repeating animations.
+    opacity: 0;
+    transform: translateY(-70px) scale(1.1);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70px) scale(1.1);
+    transform-origin: 50% 0;
+  }
+}

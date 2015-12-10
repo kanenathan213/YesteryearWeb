@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import autobind from 'autobind-decorator';
 
+import LogoLockup from './LogoLockup';
+
 class Header extends React.Component {
 
     renderEnter() {
@@ -25,8 +27,7 @@ class Header extends React.Component {
             <header className="global-header-wrap">
                 <nav className="global-header">
                     <Link to="/tours/" className="brand">
-                        <img src="../../css/images/white-logo.svg" className="logo"/>
-                        <div className="logo-text">YESTERYEAR</div>
+                        <LogoLockup />
                     </Link>
                     { /*(!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() */}
                 </nav>
