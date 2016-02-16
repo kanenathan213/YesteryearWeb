@@ -1,6 +1,6 @@
 import React  from 'react';
 import ReactDOM  from 'react-dom';
-import { Router, Route, IndexRoute } from 'react-router';
+import { Router, Route, IndexRoute, IndexRedirect } from 'react-router';
 import { createHistory } from 'history';
 
 import App from './components/App';
@@ -27,6 +27,7 @@ const routes = (
       <Route path="tours/:tourID" component={TourDetail} />
       <Route path="connect" component={Connect} />
       <Route path="account" component={Account} />
+      <IndexRedirect to="tours"component={ToursList} />
     </Route>
   </Router>
 )
