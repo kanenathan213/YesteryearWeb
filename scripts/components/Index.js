@@ -23,10 +23,6 @@ class Index extends React.Component {
                             <div className="logo-tagline">Every place has a story</div>
                         </div>
                         <div className="index-cta-wrap">
-                            {/*<Link to="/tours">
-                            <ViewTourListButton />
-                        </Link>
-                                */}
                                 <div className="pre-launch-message">
                                     We'll be launching on iOS in early 2016.
                                 </div>
