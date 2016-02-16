@@ -18,7 +18,7 @@ class ToursList extends React.Component {
       return (
           <div className="list-of-tours-wrap">
               <ul className="list-of-tours">
-                  Hi
+                  { this.props.tours ? Object.keys(this.props.tours).map(this.renderTour.bind(this)) : null }
               </ul>
           </div>
       )

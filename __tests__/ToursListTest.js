@@ -8,7 +8,7 @@ const ToursList = require('../scripts/components/ToursList');
 
 describe('ToursList', () => {
 
-  it('changes the text after click', () => {
+  it('it adds a component to the DOM', () => {
 
     var tours_list = TestUtils.renderIntoDocument(
       <ToursList />

@@ -1,11 +1,9 @@
 import React from 'react';
-//import autobind from 'autobind-decorator';
 import { Link } from 'react-router';
 import h from '../helpers';
 
 import TourStop from './TourStop';
 
-//@autobind
 class StopsList extends React.Component {
 
     constructor(props) {
@@ -31,8 +29,8 @@ class StopsList extends React.Component {
               key={key.stopID}
               index={key.stopID}
               stopDetails={key}
-              stopAll={this._stopAll}
-              ptag={this._add}
+              stopAll={this._stopAll.bind(this)}
+              ptag={this._add.bind(this)}
           />
       )
   }
@@ -42,12 +40,12 @@ class StopsList extends React.Component {
           <div className="list-of-stops-wrap">
               <ul className="list-of-stops">
                   <div className="free-stops">
-                      { (this.props.details.stops.slice(0,1)).map(this.renderTourStop) }
+                      { (this.props.details.stops.slice(0,1)).map(this.renderTourStop.bind(this)) }
                   </div>
                   <div className="paid-stops">
                       <div className="pay-wall-overlay">
                       </div>
-                      { (this.props.details.stops.slice(1)).map(this.renderTourStop) }
+                      { (this.props.details.stops.slice(1)).map(this.renderTourStop.bind(this)) }
                   </div>
               </ul>
               <div className="detail-cta-wrap">
