@@ -1,10 +1,10 @@
 import React from 'react';
-import autobind from 'autobind-decorator';
+//import autobind from 'autobind-decorator';
 
 import { Link } from 'react-router';
 import StopsList from './StopsList';
 
-@autobind
+//@autobind
 class TourDetail extends React.Component {
 
   render() {

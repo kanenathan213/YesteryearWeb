@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, History } from 'react-router';
 import reactMixin from 'react-mixin';
-import autobind from 'autobind-decorator';
+//import autobind from 'autobind-decorator';
 
 import TourDetail from './TourDetail';
 import h from '../helpers';
 
-@autobind
+// @autobind
 class Tour extends React.Component {
 
     render() {

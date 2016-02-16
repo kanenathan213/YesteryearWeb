@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
 import reactMixin from 'react-mixin';
-import autobind from 'autobind-decorator';
+//import autobind from 'autobind-decorator';
 
 import Player from './Player';
 
-@autobind
+//@autobind
 class TourStop extends React.Component {
 
     constructor(props) {

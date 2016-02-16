@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import autobind from 'autobind-decorator';
+//import autobind from 'autobind-decorator';
 
 import ProgressLabel from '../../node_modules/react-progress-label/dist/progress-label';
 
 let progressUpdate;
 
-@autobind
+//@autobind
 class Track extends Component {
 
     constructor(props) {

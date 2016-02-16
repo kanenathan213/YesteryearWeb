@@ -1,11 +1,11 @@
 import React from 'react';
-import autobind from 'autobind-decorator';
+//import autobind from 'autobind-decorator';
 import { Link } from 'react-router';
 import h from '../helpers';
 
 import TourStop from './TourStop';
 
-@autobind
+//@autobind
 class StopsList extends React.Component {
 
     constructor(props) {

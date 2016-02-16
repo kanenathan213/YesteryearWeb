@@ -1,11 +1,9 @@
 import React from 'react';
-import autobind from 'autobind-decorator';
 import { Link } from 'react-router';
 import h from '../helpers';
 
 import Tour from './Tour';
 
-@autobind
 class ToursList extends React.Component {
 
   renderTour(key) {
@@ -20,7 +18,7 @@ class ToursList extends React.Component {
       return (
           <div className="list-of-tours-wrap">
               <ul className="list-of-tours">
-                  { Object.keys(this.props.tours).map(this.renderTour) }
+                  Hi
               </ul>
           </div>
       )
