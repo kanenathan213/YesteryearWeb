@@ -1,7 +1,3 @@
-/*
-  InitialView
-*/
-
 import React from 'react';
 import { Link } from 'react-router';
 
@@ -10,7 +6,7 @@ import ViewTourListButton from './ViewTourListButton'
 
 @autobind
 class Index extends React.Component {
-
+    
     render() {
       return (
         <div className="initial-view-wrap">
@@ -20,7 +16,7 @@ class Index extends React.Component {
                     <div className="intro-header-content">
                         <div className="logo-wrap">
                             <div className="logo-name">YESTERYEAR</div>
-                            <div className="logo-tagline">Every place has a story</div>
+                            <div className="logo-tagline">When you travel, travel back in time</div>
                         </div>
                         <div className="index-cta-wrap">
                                 <div className="pre-launch-message">

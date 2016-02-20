@@ -9,6 +9,8 @@ import TourDetail from './components/TourDetail';
 import ToursList from './components/ToursList';
 import Account from './components/Account';
 import Connect from './components/Connect';
+import SingleTour from './components/SingleTour';
+import SubmitTour from './components/SubmitTour';
 
 /*
   Routes
@@ -27,7 +29,9 @@ const routes = (
       <Route path="tours/:tourID" component={TourDetail} />
       <Route path="connect" component={Connect} />
       <Route path="account" component={Account} />
-      <IndexRedirect to="tours"component={ToursList} />
+      <Route path="angkor" component={SingleTour} />
+      <Route path="submit" component={SubmitTour} />
+      <IndexRedirect to="angkor" component={SingleTour} />
     </Route>
   </Router>
 )

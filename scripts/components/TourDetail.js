@@ -32,7 +32,6 @@ class TourDetail extends React.Component {
                       <StopsList details={details}/>
                   </div>
               </div>
-
           )
       }
       else {

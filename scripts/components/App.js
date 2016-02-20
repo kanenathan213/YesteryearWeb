@@ -161,10 +161,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="heyday">
+          <div className="main-content-wrap">
+              {this.content()}
+          </div>
           <div className="background-image"></div>
           <div className="background-overlay"></div>
           <Header userData={this.state.userData} />
-          {this.content()}
       </div>
     )
   }

@@ -16,7 +16,7 @@ class Header extends React.Component {
 
     renderAccount() {
         return (
-            <Link to="/" className="account"> {/* switch to= back to /tours after launch */}
+            <Link to="/" className="account">
                 <img src={this.props.userData.profpic} className="profpic"/>
             </Link>
         )
@@ -29,7 +29,9 @@ class Header extends React.Component {
                     <Link to="/tours/" className="brand">
                         <LogoLockup />
                     </Link>
-                    { /*(!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() */}
+                    <Link to="/submit/" className="enter">Submit a tour
+                    </Link>
+                    {/* (!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() */}
                 </nav>
             </header>
         )
