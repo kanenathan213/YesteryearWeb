@@ -1,8 +1,8 @@
-# HeyDay
+# Yesteryear
 
-This is a project to build a web, iOS, and Android app to deliver better audio tours at historically meaningful places. The initial focus is on museum tours.
+This is a project to build a web, iOS, and Android app to deliver better audio tours at historically meaningful places. The initial focus is on walking tours of historic landmarks.
 
-I'm building it with React DOM and (eventually) React Native. Facebook for auth and Stripe for payments.
+Front-end is React.
 
 ## To install:
 

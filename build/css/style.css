@@ -158,6 +158,9 @@
 .global-header .enter:hover {
   background-color: rgba(255,255,255,0.3);
 }
+.global-header .enter:focus {
+  outline: none;
+}
 @media only screen and (min-width: 992px) {
   .global-header .enter {
     font-size: 1rem;
@@ -4479,6 +4482,7 @@ input[type=submit].facebook-login:active {
   text-align: center;
 }
 .main-content-wrap {
+  color: #fff;
   max-width: 960px;
   margin: 100px auto auto;
   z-index: 0;

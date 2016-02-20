@@ -6,7 +6,7 @@ import ViewTourListButton from './ViewTourListButton'
 
 @autobind
 class Index extends React.Component {
-    
+
     render() {
       return (
         <div className="initial-view-wrap">
@@ -55,7 +55,3 @@ class Index extends React.Component {
 }
 
 export default Index;
-
-// Play tours right from your phone
-
-// Skip the line and avoid expensive, dry tours
