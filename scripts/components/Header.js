@@ -29,8 +29,8 @@ class Header extends React.Component {
                     <Link to="/tours/" className="brand">
                         <LogoLockup />
                     </Link>
-                    <Link to="/submit/" className="enter">Submit a tour
-                    </Link>
+                    {/*{<Link to="/submit/" className="enter">Submit a tour
+                    </Link>}*/}
                     {/* (!this.props.userData || !this.props.userData.uid) ? this.renderEnter() : this.renderAccount() */}
                 </nav>
             </header>
