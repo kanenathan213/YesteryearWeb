@@ -13,7 +13,7 @@ class SingleTour extends React.Component {
                           <li>Totally free</li>
                       </ul>
                   </div>
-                  <a href="https://s3-us-west-2.amazonaws.com/yesteryear-images/colusseum.jpg" className="get-tour-button" download>
+                  <a href="https://s3.amazonaws.com/yesteryear-tours/Angkor_Tour.pdf" className="get-tour-button" download>
                       <span className="ion-arrow-down-a"></span> Download
                   </a>
               </div>
